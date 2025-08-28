@@ -3,9 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desenvolvimento Back-End", "Desenvolvimento Back-End", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - APIs com ASP.NET Core", "03 - APIs com ASP.NET Core", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.API", "03 - Desenvolvimento de APIs com ASP.NET Core\DevFreela.API\DevFreela.API.csproj", "{6D2D4A06-555F-6B42-CF3C-F9F44103606A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Arquitetura Limpa", "04 - Arquitetura Limpa", "{56AB5B0F-F943-414B-B4AF-BF4686A09500}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.API", "04 - Arquitetura Limpa\DevFreela.API\DevFreela.API.csproj", "{1BC1D854-A416-C6B2-C945-738870B5DEDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.Application", "04 - Arquitetura Limpa\DevFreela.Application\DevFreela.Application.csproj", "{0C9CE3DD-89B5-99D9-2D66-99FB3B8F1AE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.Core", "04 - Arquitetura Limpa\DevFreela.Core\DevFreela.Core.csproj", "{38D58877-C169-25C9-69CE-D3B20E7F5601}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.Infrastructure", "04 - Arquitetura Limpa\DevFreela.Infrastructure\DevFreela.Infrastructure.csproj", "{338E7D49-3DA4-5000-4DCD-9051E58E390A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +27,32 @@ Global
 		{6D2D4A06-555F-6B42-CF3C-F9F44103606A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D2D4A06-555F-6B42-CF3C-F9F44103606A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D2D4A06-555F-6B42-CF3C-F9F44103606A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BC1D854-A416-C6B2-C945-738870B5DEDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BC1D854-A416-C6B2-C945-738870B5DEDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BC1D854-A416-C6B2-C945-738870B5DEDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BC1D854-A416-C6B2-C945-738870B5DEDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C9CE3DD-89B5-99D9-2D66-99FB3B8F1AE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C9CE3DD-89B5-99D9-2D66-99FB3B8F1AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C9CE3DD-89B5-99D9-2D66-99FB3B8F1AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C9CE3DD-89B5-99D9-2D66-99FB3B8F1AE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38D58877-C169-25C9-69CE-D3B20E7F5601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38D58877-C169-25C9-69CE-D3B20E7F5601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38D58877-C169-25C9-69CE-D3B20E7F5601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38D58877-C169-25C9-69CE-D3B20E7F5601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{338E7D49-3DA4-5000-4DCD-9051E58E390A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{338E7D49-3DA4-5000-4DCD-9051E58E390A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{338E7D49-3DA4-5000-4DCD-9051E58E390A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{338E7D49-3DA4-5000-4DCD-9051E58E390A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6D2D4A06-555F-6B42-CF3C-F9F44103606A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{1BC1D854-A416-C6B2-C945-738870B5DEDD} = {56AB5B0F-F943-414B-B4AF-BF4686A09500}
+		{0C9CE3DD-89B5-99D9-2D66-99FB3B8F1AE7} = {56AB5B0F-F943-414B-B4AF-BF4686A09500}
+		{38D58877-C169-25C9-69CE-D3B20E7F5601} = {56AB5B0F-F943-414B-B4AF-BF4686A09500}
+		{338E7D49-3DA4-5000-4DCD-9051E58E390A} = {56AB5B0F-F943-414B-B4AF-BF4686A09500}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BDDE12DE-2A16-4A45-B905-4DF0385FEF49}
