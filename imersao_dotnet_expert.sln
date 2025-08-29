@@ -17,6 +17,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.Core", "04 - Arqu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.Infrastructure", "04 - Arquitetura Limpa\DevFreela.Infrastructure\DevFreela.Infrastructure.csproj", "{338E7D49-3DA4-5000-4DCD-9051E58E390A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Persistência com Entity Framework Core", "05 - Persistência com Entity Framework Core", "{C077A855-5430-44A5-82CF-9338A8B206DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.API", "05 - Persistência com Entity Framework Core\DevFreela.API\DevFreela.API.csproj", "{90F86B1A-AC8D-6E57-55A2-EB99D9FF10DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.Application", "05 - Persistência com Entity Framework Core\DevFreela.Application\DevFreela.Application.csproj", "{1BAC6BC1-7529-6B7E-13D9-85CE549C99D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.Core", "05 - Persistência com Entity Framework Core\DevFreela.Core\DevFreela.Core.csproj", "{C4382B4A-41B2-9DAF-9E60-FE5CAD73149B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.Infrastructure", "05 - Persistência com Entity Framework Core\DevFreela.Infrastructure\DevFreela.Infrastructure.csproj", "{CA8BF2C7-AF06-7CFC-F640-9AA6896403DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +53,22 @@ Global
 		{338E7D49-3DA4-5000-4DCD-9051E58E390A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{338E7D49-3DA4-5000-4DCD-9051E58E390A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{338E7D49-3DA4-5000-4DCD-9051E58E390A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90F86B1A-AC8D-6E57-55A2-EB99D9FF10DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90F86B1A-AC8D-6E57-55A2-EB99D9FF10DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90F86B1A-AC8D-6E57-55A2-EB99D9FF10DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90F86B1A-AC8D-6E57-55A2-EB99D9FF10DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BAC6BC1-7529-6B7E-13D9-85CE549C99D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BAC6BC1-7529-6B7E-13D9-85CE549C99D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BAC6BC1-7529-6B7E-13D9-85CE549C99D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BAC6BC1-7529-6B7E-13D9-85CE549C99D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4382B4A-41B2-9DAF-9E60-FE5CAD73149B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4382B4A-41B2-9DAF-9E60-FE5CAD73149B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4382B4A-41B2-9DAF-9E60-FE5CAD73149B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4382B4A-41B2-9DAF-9E60-FE5CAD73149B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA8BF2C7-AF06-7CFC-F640-9AA6896403DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA8BF2C7-AF06-7CFC-F640-9AA6896403DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA8BF2C7-AF06-7CFC-F640-9AA6896403DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA8BF2C7-AF06-7CFC-F640-9AA6896403DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +79,10 @@ Global
 		{0C9CE3DD-89B5-99D9-2D66-99FB3B8F1AE7} = {56AB5B0F-F943-414B-B4AF-BF4686A09500}
 		{38D58877-C169-25C9-69CE-D3B20E7F5601} = {56AB5B0F-F943-414B-B4AF-BF4686A09500}
 		{338E7D49-3DA4-5000-4DCD-9051E58E390A} = {56AB5B0F-F943-414B-B4AF-BF4686A09500}
+		{90F86B1A-AC8D-6E57-55A2-EB99D9FF10DE} = {C077A855-5430-44A5-82CF-9338A8B206DF}
+		{1BAC6BC1-7529-6B7E-13D9-85CE549C99D1} = {C077A855-5430-44A5-82CF-9338A8B206DF}
+		{C4382B4A-41B2-9DAF-9E60-FE5CAD73149B} = {C077A855-5430-44A5-82CF-9338A8B206DF}
+		{CA8BF2C7-AF06-7CFC-F640-9AA6896403DD} = {C077A855-5430-44A5-82CF-9338A8B206DF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BDDE12DE-2A16-4A45-B905-4DF0385FEF49}
