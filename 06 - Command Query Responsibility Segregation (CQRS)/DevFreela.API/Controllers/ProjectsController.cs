@@ -20,10 +20,10 @@ namespace DevFreela.API.Controllers
         {
             _mediator = mediator;
         }
-    
+
         [HttpGet]
         public async Task<IActionResult> Get()
-        {           
+        {
             var getAllProjectsQuery = new GetAllProjectsQuery();
 
             var projects = await _mediator.Send(getAllProjectsQuery);

@@ -7,6 +7,6 @@ namespace DevFreela.Application.Queries.GetAllProjects
     // Query sem parâmetros
     public class GetAllProjectsQuery : IRequest<List<ProjectViewModel>>
     {
-       
+
     }
 }
