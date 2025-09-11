@@ -1,6 +1,4 @@
 ﻿using DevFreela.Infrastructure.Persistence;
-using MediatR;
-using Microsoft.EntityFrameworkCore;
 using System.Threading;
 using System.Threading.Tasks;
 

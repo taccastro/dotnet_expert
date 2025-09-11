@@ -1,8 +1,5 @@
-﻿using Dapper;
-using DevFreela.Core.DTOs;
+﻿using DevFreela.Core.DTOs;
 using DevFreela.Core.Repositories;
-using Microsoft.Data.SqlClient;
-using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;

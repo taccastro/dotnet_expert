@@ -1,8 +1,4 @@
-﻿using Dapper;
-using DevFreela.Application.ViewModels;
-using MediatR;
-using Microsoft.Data.SqlClient;
-using Microsoft.Extensions.Configuration;
+﻿using DevFreela.Application.ViewModels;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;

@@ -1,6 +1,5 @@
 ﻿using DevFreela.Application.ViewModels;
 using DevFreela.Core.Repositories;
-using MediatR;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;

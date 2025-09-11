@@ -1,9 +1,4 @@
-﻿using Dapper;
-using DevFreela.Infrastructure.Persistence;
-using MediatR;
-using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
+﻿using DevFreela.Infrastructure.Persistence;
 using System.Threading;
 using System.Threading.Tasks;
 

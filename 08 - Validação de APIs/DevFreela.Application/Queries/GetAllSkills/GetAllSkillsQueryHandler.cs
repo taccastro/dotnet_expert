@@ -1,6 +1,5 @@
 ﻿using DevFreela.Core.DTOs;
 using DevFreela.Core.Repositories;
-using MediatR;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;

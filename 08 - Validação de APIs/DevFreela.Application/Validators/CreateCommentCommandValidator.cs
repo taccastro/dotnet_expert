@@ -1,5 +1,4 @@
 ﻿using DevFreela.Application.Commands.CreateComment;
-using FluentValidation;
 
 namespace DevFreela.Application.Validators
 {
