@@ -1,4 +1,5 @@
 ﻿using DevFreela.Application.Commands.CreateUser;
+using FluentValidation;
 using System.Text.RegularExpressions;
 
 namespace DevFreela.Application.Validators

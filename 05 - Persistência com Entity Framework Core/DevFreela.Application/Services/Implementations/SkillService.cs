@@ -1,6 +1,9 @@
-﻿using DevFreela.Application.Services.Interfaces;
+﻿using Dapper;
+using DevFreela.Application.Services.Interfaces;
 using DevFreela.Application.ViewModels;
 using DevFreela.Infrastructure.Persistence;
+using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
 using System.Linq;
 

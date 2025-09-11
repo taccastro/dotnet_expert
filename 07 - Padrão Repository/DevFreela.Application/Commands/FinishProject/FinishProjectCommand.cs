@@ -1,4 +1,6 @@
-﻿namespace DevFreela.Application.Commands.FinishProject
+﻿using MediatR;
+
+namespace DevFreela.Application.Commands.FinishProject
 {
     public class FinishProjectCommand : IRequest<Unit>
     {

@@ -1,5 +1,7 @@
 ﻿using DevFreela.Core.Entities;
 using DevFreela.Infrastructure.Persistence;
+using MediatR;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 

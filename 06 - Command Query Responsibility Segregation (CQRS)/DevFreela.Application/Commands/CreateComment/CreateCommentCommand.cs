@@ -1,4 +1,9 @@
-﻿namespace DevFreela.Application.Commands.CreateComment
+﻿using MediatR;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace DevFreela.Application.Commands.CreateComment
 {
     public class CreateCommentCommand : IRequest<Unit>
     {

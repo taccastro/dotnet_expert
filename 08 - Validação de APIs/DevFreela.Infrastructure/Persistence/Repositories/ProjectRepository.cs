@@ -1,5 +1,9 @@
-﻿using DevFreela.Core.Entities;
+﻿using Dapper;
+using DevFreela.Core.Entities;
 using DevFreela.Core.Repositories;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
