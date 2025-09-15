@@ -57,6 +57,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.Core", "06 - Comm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.Infrastructure", "06 - Command Query Responsibility Segregation (CQRS)\DevFreela.Infrastructure\DevFreela.Infrastructure.csproj", "{51DB042B-A4D3-DC6A-EA8A-25D674328C95}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09 - Autenticação e Autorização com JWT", "09 - Autenticação e Autorização com JWT", "{77895932-3CF6-4215-A8FB-2DA022532DEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.Infrastructure", "09 - Autenticação e Autorização com JWT\DevFreela.Infrastructure\DevFreela.Infrastructure.csproj", "{6FBA0839-C358-C771-2D9D-6948C51C9A9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.Core", "09 - Autenticação e Autorização com JWT\DevFreela.Core\DevFreela.Core.csproj", "{18B8D3AF-7BF3-BA1A-1951-142D814F51F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.Application", "09 - Autenticação e Autorização com JWT\DevFreela.Application\DevFreela.Application.csproj", "{C98B187E-339A-4E15-E108-46D9874E0F7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.API", "09 - Autenticação e Autorização com JWT\DevFreela.API\DevFreela.API.csproj", "{F708EB8F-AE5B-F259-1EA5-73D65E02AA42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +157,22 @@ Global
 		{51DB042B-A4D3-DC6A-EA8A-25D674328C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51DB042B-A4D3-DC6A-EA8A-25D674328C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51DB042B-A4D3-DC6A-EA8A-25D674328C95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FBA0839-C358-C771-2D9D-6948C51C9A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FBA0839-C358-C771-2D9D-6948C51C9A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FBA0839-C358-C771-2D9D-6948C51C9A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FBA0839-C358-C771-2D9D-6948C51C9A9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18B8D3AF-7BF3-BA1A-1951-142D814F51F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18B8D3AF-7BF3-BA1A-1951-142D814F51F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18B8D3AF-7BF3-BA1A-1951-142D814F51F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18B8D3AF-7BF3-BA1A-1951-142D814F51F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C98B187E-339A-4E15-E108-46D9874E0F7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C98B187E-339A-4E15-E108-46D9874E0F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C98B187E-339A-4E15-E108-46D9874E0F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C98B187E-339A-4E15-E108-46D9874E0F7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F708EB8F-AE5B-F259-1EA5-73D65E02AA42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F708EB8F-AE5B-F259-1EA5-73D65E02AA42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F708EB8F-AE5B-F259-1EA5-73D65E02AA42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F708EB8F-AE5B-F259-1EA5-73D65E02AA42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -173,6 +199,10 @@ Global
 		{D8DD0439-A521-2AC3-BD16-BB21B86AB2F5} = {DE539461-7FDC-4199-B680-AA0DDDADDA6F}
 		{E3EB9724-E573-F352-535A-32BB9B2BBA17} = {DE539461-7FDC-4199-B680-AA0DDDADDA6F}
 		{51DB042B-A4D3-DC6A-EA8A-25D674328C95} = {DE539461-7FDC-4199-B680-AA0DDDADDA6F}
+		{6FBA0839-C358-C771-2D9D-6948C51C9A9C} = {77895932-3CF6-4215-A8FB-2DA022532DEA}
+		{18B8D3AF-7BF3-BA1A-1951-142D814F51F7} = {77895932-3CF6-4215-A8FB-2DA022532DEA}
+		{C98B187E-339A-4E15-E108-46D9874E0F7E} = {77895932-3CF6-4215-A8FB-2DA022532DEA}
+		{F708EB8F-AE5B-F259-1EA5-73D65E02AA42} = {77895932-3CF6-4215-A8FB-2DA022532DEA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BDDE12DE-2A16-4A45-B905-4DF0385FEF49}
