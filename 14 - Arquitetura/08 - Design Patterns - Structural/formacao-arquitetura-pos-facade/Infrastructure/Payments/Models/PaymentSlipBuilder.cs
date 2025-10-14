@@ -8,7 +8,6 @@ namespace AwesomeShopPatterns.API.Infrastructure.Payments.Models
     public class PaymentSlipBuilder
     {
         private PaymentSlipModel _paymentSlipModel;
-     
 
         public PaymentSlipBuilder()
         {
