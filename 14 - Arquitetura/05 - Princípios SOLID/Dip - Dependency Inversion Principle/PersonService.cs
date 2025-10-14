@@ -1,18 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace SolidPrinciples.Dip
 {
-    public class PersonController {
+    public class PersonController
+    {
         private readonly IPersonService service;
 
         public PersonController(IPersonService service)
         {
             this.service = service;
         }
-        
+
     }
     public interface IPersonService
     {

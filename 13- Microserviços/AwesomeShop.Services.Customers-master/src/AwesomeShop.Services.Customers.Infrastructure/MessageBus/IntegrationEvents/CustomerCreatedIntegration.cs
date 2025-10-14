@@ -10,7 +10,7 @@ namespace AwesomeShop.Services.Customers.Infrastructure.MessageBus.IntegrationEv
             FullName = fullName;
             Email = email;
         }
-        
+
         public Guid Id { get; private set; }
         public string FullName { get; private set; }
         public string Email { get; private set; }

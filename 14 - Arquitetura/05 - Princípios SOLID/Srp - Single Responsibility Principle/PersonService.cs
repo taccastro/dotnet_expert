@@ -6,7 +6,7 @@ namespace SolidPrinciples.Srp
         private readonly ServiceBusService _serviceBusService;
         private readonly ErpSyncService _erpSyncService;
         public PersonService(
-            PersonRepository personRepository, 
+            PersonRepository personRepository,
             ServiceBusService serviceBusService,
             ErpSyncService erpSyncService)
         {
@@ -15,7 +15,8 @@ namespace SolidPrinciples.Srp
             _erpSyncService = erpSyncService;
         }
 
-        public void Add(PersonDto dto) {
+        public void Add(PersonDto dto)
+        {
             var person = new Person(dto.Name, dto.Document, dto.BirthDate);
 
             _personRepository.Add(person);

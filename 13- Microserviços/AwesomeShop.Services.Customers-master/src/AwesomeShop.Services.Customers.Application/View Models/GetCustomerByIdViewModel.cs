@@ -1,5 +1,5 @@
-using System;
 using AwesomeShop.Services.Customers.Application.Commands;
+using System;
 
 namespace AwesomeShop.Services.Customers.Application.View_Models
 {
@@ -12,7 +12,7 @@ namespace AwesomeShop.Services.Customers.Application.View_Models
             BirthDate = birthDate;
             Address = address;
         }
-        
+
         public Guid Id { get; private set; }
         public string FullName { get; private set; }
         public DateTime BirthDate { get; private set; }

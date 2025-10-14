@@ -1,6 +1,6 @@
-using System;
 using AwesomeShop.Services.Customers.Core.ValueObjects;
 using MediatR;
+using System;
 
 namespace AwesomeShop.Services.Customers.Application.Commands
 {
@@ -11,18 +11,20 @@ namespace AwesomeShop.Services.Customers.Application.Commands
         public AddressDto Address { get; set; }
     }
 
-    public class AddressDto {
+    public class AddressDto
+    {
         public string Street { get; set; }
         public string Number { get; set; }
         public string City { get; set; }
         public string State { get; set; }
         public string ZipCode { get; set; }
 
-        public Address ToEntity() 
+        public Address ToEntity()
             => new Address(Street, Number, City, State, ZipCode);
 
         public static AddressDto ToDto(Address address)
-            => new AddressDto {
+            => new AddressDto
+            {
                 Street = address?.Street,
                 Number = address?.Number,
                 City = address?.City,

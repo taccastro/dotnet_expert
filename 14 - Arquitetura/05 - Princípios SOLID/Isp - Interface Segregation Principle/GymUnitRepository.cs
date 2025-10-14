@@ -1,14 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace SolidPrinciples.Isp
 {
     public class GymUnitRepository : IReadOnlyRepository<GymUnit>
     {
         private readonly GymDbContext _context;
-        
+
         // Talvez até utilizar um repositório genérico por composição aqui
         public GymUnitRepository(GymDbContext context)
         {
@@ -26,7 +21,8 @@ namespace SolidPrinciples.Isp
         }
     }
 
-    public class GymUnit {
+    public class GymUnit
+    {
         public GymUnit(Guid id, string name, string fullAddress, DateTime createdAt)
         {
             Id = id;
@@ -41,7 +37,8 @@ namespace SolidPrinciples.Isp
         public DateTime CreatedAt { get; private set; }
     }
 
-    public class GymDbContext {
+    public class GymDbContext
+    {
         public List<GymUnit> Gyms { get; set; }
     }
 }

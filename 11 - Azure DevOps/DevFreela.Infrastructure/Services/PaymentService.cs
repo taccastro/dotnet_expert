@@ -1,6 +1,6 @@
+using DevFreela.Infrastructure.MessageBus;
 using System.Text;
 using System.Text.Json;
-using DevFreela.Infrastructure.MessageBus;
 
 namespace DevFreela.Infrastructure.Services
 {

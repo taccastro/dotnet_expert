@@ -1,10 +1,10 @@
-using System;
-using System.Threading;
-using System.Threading.Tasks;
 using AwesomeShop.Services.Customers.Core.Entities;
 using AwesomeShop.Services.Customers.Core.Repositories;
 using AwesomeShop.Services.Customers.Infrastructure.MessageBus;
 using MediatR;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace AwesomeShop.Services.Customers.Application.Commands.Handlers
 {

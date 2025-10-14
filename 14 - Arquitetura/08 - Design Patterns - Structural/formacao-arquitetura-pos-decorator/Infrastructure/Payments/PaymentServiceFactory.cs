@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AwesomeShopPatterns.API.Core.Enums;
 using AwesomeShopPatterns.API.Infrastructure.Integrations;
 using AwesomeShopPatterns.API.Infrastructure.Payments.Decorators;
@@ -15,7 +11,7 @@ namespace AwesomeShopPatterns.API.Infrastructure.Payments
         private readonly ICoreCrmIntegrationService _crmService;
 
         public PaymentServiceFactory(
-            CreditCardService creditCardService, 
+            CreditCardService creditCardService,
             PaymentSlipService paymentSlipService,
             ICoreCrmIntegrationService crmService
             )
@@ -29,10 +25,11 @@ namespace AwesomeShopPatterns.API.Infrastructure.Payments
         {
             IPaymentService paymentService;
 
-            switch (paymentMethod) {
-                case PaymentMethod.CreditCard: 
+            switch (paymentMethod)
+            {
+                case PaymentMethod.CreditCard:
                     paymentService = _creditCardService;
-                    
+
                     break;
                 case PaymentMethod.PaymentSlip:
                     paymentService = _paymentSlipService;

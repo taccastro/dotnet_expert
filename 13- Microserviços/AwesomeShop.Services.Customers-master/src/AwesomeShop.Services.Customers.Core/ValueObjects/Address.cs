@@ -21,7 +21,7 @@ namespace AwesomeShop.Services.Customers.Core.ValueObjects
 
         public string GetFullAddress()
             => $"{Street}, {Number}, {City}, {State}, {ZipCode}";
-        
+
         public bool Equals(Address other)
         {
             return Street.Equals(other.Street, StringComparison.OrdinalIgnoreCase) &&

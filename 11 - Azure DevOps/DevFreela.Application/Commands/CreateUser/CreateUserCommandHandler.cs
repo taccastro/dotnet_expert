@@ -2,8 +2,6 @@
 using DevFreela.Infrastructure.Auth;
 using DevFreela.Infrastructure.Persistence;
 using MediatR;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace DevFreela.Application.Commands.CreateUser
 {

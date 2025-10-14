@@ -1,11 +1,11 @@
-using System;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
+using System;
 
 namespace AwesomeShop.Services.Customers.Infrastructure.Persistence.Serializers
 {
-    public class GuidSerializerProvider: IBsonSerializationProvider
+    public class GuidSerializerProvider : IBsonSerializationProvider
     {
         public IBsonSerializer GetSerializer(Type type)
         {

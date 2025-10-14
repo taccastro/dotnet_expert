@@ -1,6 +1,6 @@
-using System;
 using AwesomeShop.Services.Customers.Application.View_Models;
 using MediatR;
+using System;
 
 namespace AwesomeShop.Services.Customers.Application.Queries
 {
@@ -10,7 +10,7 @@ namespace AwesomeShop.Services.Customers.Application.Queries
         {
             Id = id;
         }
-        
+
         public Guid Id { get; private set; }
     }
 }

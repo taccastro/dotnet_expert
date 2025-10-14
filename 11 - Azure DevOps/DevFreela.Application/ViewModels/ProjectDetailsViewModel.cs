@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using DevFreela.Core.Entities;
+﻿using DevFreela.Core.Entities;
 
 namespace DevFreela.Application.ViewModels
 {

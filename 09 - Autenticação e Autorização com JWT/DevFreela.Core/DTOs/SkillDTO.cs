@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DevFreela.Core.DTOs
+﻿namespace DevFreela.Core.DTOs
 {
     public class SkillDTO
     {

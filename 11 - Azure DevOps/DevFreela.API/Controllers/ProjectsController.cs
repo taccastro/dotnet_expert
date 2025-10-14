@@ -9,8 +9,6 @@ using DevFreela.Application.Queries.GetProjectById;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace DevFreela.API.Controllers
 {
@@ -30,7 +28,7 @@ namespace DevFreela.API.Controllers
         {
             var getAllProjectsQuery = new GetAllProjectsQuery(query);
 
-            var projects = await _mediator.Send(getAllProjectsQuery); 
+            var projects = await _mediator.Send(getAllProjectsQuery);
 
             return Ok(projects);
         }
@@ -51,7 +49,7 @@ namespace DevFreela.API.Controllers
 
             return Ok(project);
         }
-        
+
         // Create Project
         [HttpPost]
         [Authorize(Roles = "client")]

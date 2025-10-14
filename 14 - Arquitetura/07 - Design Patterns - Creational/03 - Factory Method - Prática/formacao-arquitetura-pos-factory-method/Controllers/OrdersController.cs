@@ -1,9 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AwesomeShopPatterns.API.Application.Models;
-using AwesomeShopPatterns.API.Core.Enums;
 using AwesomeShopPatterns.API.Infrastructure.Payments;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,7 +15,8 @@ namespace AwesomeShopPatterns.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post(OrderInputModel model) {
+        public IActionResult Post(OrderInputModel model)
+        {
             var service = _paymentServiceFactory.GetService(model.PaymentInfo.PaymentMethod);
 
             service.Process(model);

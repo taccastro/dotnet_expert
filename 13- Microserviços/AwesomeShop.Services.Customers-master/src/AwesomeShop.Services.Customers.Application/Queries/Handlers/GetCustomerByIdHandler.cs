@@ -1,10 +1,9 @@
-using System;
-using System.Threading;
-using System.Threading.Tasks;
 using AwesomeShop.Services.Customers.Application.Commands;
 using AwesomeShop.Services.Customers.Application.View_Models;
 using AwesomeShop.Services.Customers.Core.Repositories;
 using MediatR;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace AwesomeShop.Services.Customers.Application.Queries.Handlers
 {

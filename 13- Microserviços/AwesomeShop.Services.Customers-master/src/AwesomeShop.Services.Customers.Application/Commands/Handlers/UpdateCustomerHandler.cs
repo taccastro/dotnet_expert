@@ -1,8 +1,7 @@
+using AwesomeShop.Services.Customers.Core.Repositories;
+using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
-using AwesomeShop.Services.Customers.Core.Repositories;
-using AwesomeShop.Services.Customers.Core.ValueObjects;
-using MediatR;
 
 namespace AwesomeShop.Services.Customers.Application.Commands.Handlers
 {

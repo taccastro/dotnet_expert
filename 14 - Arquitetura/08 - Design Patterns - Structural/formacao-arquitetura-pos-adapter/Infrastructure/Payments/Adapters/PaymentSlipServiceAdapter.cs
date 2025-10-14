@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AwesomeShopPatterns.API.Application.Models;
 using AwesomeShopPatterns.API.Infrastructure.Payments.Models;
 
@@ -16,11 +12,12 @@ namespace AwesomeShopPatterns.API.Infrastructure.Payments.Adapters
             _externalService = externalService;
         }
 
-        public PaymentSlipModel GeneratePaymentSlip(OrderInputModel model) {
+        public PaymentSlipModel GeneratePaymentSlip(OrderInputModel model)
+        {
             var externalModel = _externalService.GeneratePaymentSlip(model);
 
             var builder = new PaymentSlipBuilder();
-            
+
             var paymentSlipModel = builder
                 .Start()
                 .WithPayer(new Payer(externalModel.payer_name, externalModel.payer_doc, externalModel.payer_addr))

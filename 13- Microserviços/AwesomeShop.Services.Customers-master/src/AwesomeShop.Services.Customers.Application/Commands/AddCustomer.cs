@@ -1,5 +1,5 @@
-using System;
 using MediatR;
+using System;
 
 namespace AwesomeShop.Services.Customers.Application.Commands
 {

@@ -1,18 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace SolidPrinciples.Ocp
 {
     public class PaymentService
     {
-        public void Process(IOrderPaymentMethod paymentMethod) {
+        public void Process(IOrderPaymentMethod paymentMethod)
+        {
             paymentMethod.Process();
         }
     }
 
-    public interface IOrderPaymentMethod {
+    public interface IOrderPaymentMethod
+    {
         void Process();
     }
 
@@ -20,9 +17,9 @@ namespace SolidPrinciples.Ocp
     {
         public CreditCardMethod(OrderPaymentInfo paymentInfo)
         {
-            
+
         }
-        
+
         public void Process()
         {
             throw new NotImplementedException();
@@ -45,13 +42,15 @@ namespace SolidPrinciples.Ocp
         }
     }
 
-    public class OrderPaymentInfo {
+    public class OrderPaymentInfo
+    {
         public Guid OrderId { get; set; }
         public decimal TotalPrice { get; set; }
         public PaymentType Type { get; set; }
     }
 
-    public enum PaymentType {
+    public enum PaymentType
+    {
         Credit = 0,
         Debit = 1,
         LoyaltyPoints = 2

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DevFreela.Core.Entities
+﻿namespace DevFreela.Core.Entities
 {
     public class Skill : BaseEntity
     {

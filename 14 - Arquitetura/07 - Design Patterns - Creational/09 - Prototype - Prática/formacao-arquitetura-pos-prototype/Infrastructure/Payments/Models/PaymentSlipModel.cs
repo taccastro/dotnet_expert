@@ -4,10 +4,10 @@ namespace AwesomeShopPatterns.API.Infrastructure.Payments.Models
     {
         public PaymentSlipModel()
         {
-            
+
         }
 
-        public PaymentSlipModel(string barCode, string ourNumber, DateTime expiresAt, DateTime processedAt, 
+        public PaymentSlipModel(string barCode, string ourNumber, DateTime expiresAt, DateTime processedAt,
         decimal documentAmount, Payer payer, Receiver receiver)
         {
             BarCode = barCode;
@@ -28,7 +28,8 @@ namespace AwesomeShopPatterns.API.Infrastructure.Payments.Models
         public Receiver Receiver { get; set; }
     }
 
-    public class Payer {
+    public class Payer
+    {
         public Payer(string fullName, string document, string fullAddress)
         {
             FullName = fullName;
@@ -41,7 +42,8 @@ namespace AwesomeShopPatterns.API.Infrastructure.Payments.Models
         public string FullAddress { get; set; }
     }
 
-    public class Receiver {
+    public class Receiver
+    {
         public Receiver(string fullName, string document, string fullAddress)
         {
             FullName = fullName;

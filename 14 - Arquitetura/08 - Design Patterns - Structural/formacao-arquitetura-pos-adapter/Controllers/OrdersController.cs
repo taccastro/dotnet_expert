@@ -1,9 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AwesomeShopPatterns.API.Application.Models;
-using AwesomeShopPatterns.API.Core.Enums;
 using AwesomeShopPatterns.API.Infrastructure;
 using AwesomeShopPatterns.API.Infrastructure.Payments;
 using Microsoft.AspNetCore.Mvc;
@@ -26,7 +21,8 @@ namespace AwesomeShopPatterns.API.Controllers
             [FromServices] InternationalOrderAbstractFactory internationalOrderAbstractFactory,
             [FromServices] NationalOrderAbstractFactory nationalOrderAbstractFactory,
             OrderInputModel model
-            ) {
+            )
+        {
             IOrderAbstractFactory orderAbstractFactory;
 
             if (model.IsInternational != null && model.IsInternational.Value)

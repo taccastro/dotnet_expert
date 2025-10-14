@@ -1,6 +1,6 @@
-using System;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
+using System;
 
 namespace AwesomeShop.Services.Customers.Infrastructure.Persistence.Serializers
 {

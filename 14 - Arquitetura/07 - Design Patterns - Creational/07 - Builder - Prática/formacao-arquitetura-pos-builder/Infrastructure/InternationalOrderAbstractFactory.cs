@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AwesomeShopPatterns.API.Core.Enums;
 using AwesomeShopPatterns.API.Infrastructure.Deliveries;
 using AwesomeShopPatterns.API.Infrastructure.Payments;

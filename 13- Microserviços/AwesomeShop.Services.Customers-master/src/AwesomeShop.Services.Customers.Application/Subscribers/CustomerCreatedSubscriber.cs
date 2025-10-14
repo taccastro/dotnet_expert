@@ -1,14 +1,13 @@
-using System;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using AwesomeShop.Services.Customers.Infrastructure.MessageBus;
 using AwesomeShop.Services.Customers.Infrastructure.MessageBus.IntegrationEvents;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
+using System;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace AwesomeShop.Services.Customers.Application.Subscribers
 {
@@ -22,7 +21,7 @@ namespace AwesomeShop.Services.Customers.Application.Subscribers
         {
             _serviceProvider = serviceProvider;
             _connection = producerConnection.Connection;
-            
+
             _channel = _connection.CreateModel();
             _channel.QueueDeclare(QueueName, false, false, false, null);
         }
@@ -31,7 +30,8 @@ namespace AwesomeShop.Services.Customers.Application.Subscribers
         {
             var consumer = new EventingBasicConsumer(_channel);
 
-            consumer.Received += (sender, eventArgs) => {
+            consumer.Received += (sender, eventArgs) =>
+            {
                 var contentArray = eventArgs.Body.ToArray();
                 var contentString = Encoding.UTF8.GetString(contentArray);
                 var message = JsonConvert.DeserializeObject<CustomerCreatedIntegration>(contentString);

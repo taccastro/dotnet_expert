@@ -1,4 +1,3 @@
-using System.Text;
 using DevFreela.Core.Repositories;
 using DevFreela.Infrastructure.Auth;
 using DevFreela.Infrastructure.MessageBus;
@@ -10,12 +9,14 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace DevFreela.Infrastructure
 {
     public static class InfrastructureModule
     {
-        public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration) {
+        public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
+        {
             services
                 .AddPersistence(configuration)
                 .AddRepositories()
@@ -26,7 +27,8 @@ namespace DevFreela.Infrastructure
             return services;
         }
 
-        private static IServiceCollection AddPersistence(this IServiceCollection services, IConfiguration configuration) {
+        private static IServiceCollection AddPersistence(this IServiceCollection services, IConfiguration configuration)
+        {
             var connectionString = configuration.GetConnectionString("DevFreelaCs");
 
             // services.AddDbContext<DevFreelaDbContext>(options => options.UseSqlServer(connectionString));
@@ -35,7 +37,8 @@ namespace DevFreela.Infrastructure
             return services;
         }
 
-        private static IServiceCollection AddRepositories(this IServiceCollection services) {
+        private static IServiceCollection AddRepositories(this IServiceCollection services)
+        {
             services.AddScoped<IProjectRepository, ProjectRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ISkillRepository, SkillRepository>();
@@ -43,7 +46,8 @@ namespace DevFreela.Infrastructure
             return services;
         }
 
-        private static IServiceCollection AddAuthentication(this IServiceCollection services, IConfiguration configuration) {
+        private static IServiceCollection AddAuthentication(this IServiceCollection services, IConfiguration configuration)
+        {
             services
                 .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
@@ -67,15 +71,17 @@ namespace DevFreela.Infrastructure
             return services;
         }
 
-        private static IServiceCollection AddMessageBus(this IServiceCollection services) {
+        private static IServiceCollection AddMessageBus(this IServiceCollection services)
+        {
             services.AddScoped<IMessageBusService, MessageBusService>();
 
             return services;
         }
 
-        private static IServiceCollection AddServices(this IServiceCollection services) {
+        private static IServiceCollection AddServices(this IServiceCollection services)
+        {
             services.AddScoped<IPaymentService, PaymentService>();
-            
+
             return services;
         }
     }

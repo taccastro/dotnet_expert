@@ -1,9 +1,9 @@
 
 using Newtonsoft.Json;
-using RabbitMQ.Client;
 using Newtonsoft.Json.Serialization;
-using System.Text;
+using RabbitMQ.Client;
 using System;
+using System.Text;
 
 namespace AwesomeShop.Services.Customers.Infrastructure.MessageBus
 {
@@ -14,16 +14,18 @@ namespace AwesomeShop.Services.Customers.Infrastructure.MessageBus
         {
             _connection = producerConnection.Connection;
         }
-        
+
         public void Publish(object message, string routingKey, string exchange)
         {
-            if (routingKey.Contains("-integration")) {
+            if (routingKey.Contains("-integration"))
+            {
                 routingKey = routingKey.Replace("-integration", "");
             }
 
             var channel = _connection.CreateModel();
 
-            var settings = new JsonSerializerSettings {
+            var settings = new JsonSerializerSettings
+            {
                 NullValueHandling = NullValueHandling.Ignore,
                 ContractResolver = new CamelCasePropertyNamesContractResolver()
             };
@@ -32,7 +34,7 @@ namespace AwesomeShop.Services.Customers.Infrastructure.MessageBus
             Console.WriteLine(payload);
 
             var body = Encoding.UTF8.GetBytes(payload);
-            
+
             channel.ExchangeDeclare(exchange, "topic", true);
 
             channel.BasicPublish(exchange, routingKey, null, body);

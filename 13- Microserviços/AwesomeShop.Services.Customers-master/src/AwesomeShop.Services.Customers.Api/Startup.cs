@@ -1,13 +1,13 @@
+using AwesomeShop.Services.Customers.Application;
 using AwesomeShop.Services.Customers.Application.Commands;
 using AwesomeShop.Services.Customers.Infrastructure;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using MediatR;
-using AwesomeShop.Services.Customers.Application;
 
 namespace AwesomeShop.Services.Customers.Api
 {
@@ -30,11 +30,11 @@ namespace AwesomeShop.Services.Customers.Api
                 .AddRabbitMq()
                 .AddSubscribers()
                 .AddConsulConfig(Configuration);
-            
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo {Title = "AwesomeShop.Services.Customers.Api", Version = "v1"});
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "AwesomeShop.Services.Customers.Api", Version = "v1" });
             });
         }
 

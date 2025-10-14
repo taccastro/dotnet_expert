@@ -1,5 +1,5 @@
-using System;
 using AwesomeShop.Services.Customers.Core.ValueObjects;
+using System;
 
 namespace AwesomeShop.Services.Customers.Core.Events
 {

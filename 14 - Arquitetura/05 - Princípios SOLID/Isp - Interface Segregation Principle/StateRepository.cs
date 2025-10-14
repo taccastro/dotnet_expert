@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace SolidPrinciples.Isp
 {
     public class StateRepository : IReadOnlyRepository<State>
@@ -18,7 +13,8 @@ namespace SolidPrinciples.Isp
         }
     }
 
-    public class State {
-        
+    public class State
+    {
+
     }
 }

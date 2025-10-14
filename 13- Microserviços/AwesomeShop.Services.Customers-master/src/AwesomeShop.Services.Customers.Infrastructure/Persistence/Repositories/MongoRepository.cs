@@ -1,13 +1,13 @@
+using AwesomeShop.Services.Customers.Core.Entities;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using AwesomeShop.Services.Customers.Core.Entities;
-using MongoDB.Driver;
 
 namespace AwesomeShop.Services.Customers.Infrastructure.Persistence.Repositories
 {
-    public class MongoRepository<T> : IMongoRepository<T> where T: IEntityBase
+    public class MongoRepository<T> : IMongoRepository<T> where T : IEntityBase
     {
         public MongoRepository(IMongoDatabase database, string collectionName)
         {

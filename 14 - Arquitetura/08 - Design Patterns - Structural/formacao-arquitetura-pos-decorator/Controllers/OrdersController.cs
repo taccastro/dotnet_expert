@@ -1,11 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AwesomeShopPatterns.API.Application.Models;
-using AwesomeShopPatterns.API.Core.Enums;
 using AwesomeShopPatterns.API.Infrastructure;
-using AwesomeShopPatterns.API.Infrastructure.Integrations;
 using AwesomeShopPatterns.API.Infrastructure.Payments;
 using Microsoft.AspNetCore.Mvc;
 
@@ -26,8 +20,9 @@ namespace AwesomeShopPatterns.API.Controllers
         public IActionResult SimplerPost(
             [FromServices] IPaymentServiceFactory paymentServiceFactory,
             OrderInputModel model
-            ) {
-            
+            )
+        {
+
             var paymentService = paymentServiceFactory.GetService(model.PaymentInfo.PaymentMethod);
 
             // Precisamos adicionar novos comportamentos ao "paymentService.Process", mas não
@@ -42,7 +37,8 @@ namespace AwesomeShopPatterns.API.Controllers
             [FromServices] InternationalOrderAbstractFactory internationalOrderAbstractFactory,
             [FromServices] NationalOrderAbstractFactory nationalOrderAbstractFactory,
             OrderInputModel model
-            ) {
+            )
+        {
             IOrderAbstractFactory orderAbstractFactory;
 
             if (model.IsInternational != null && model.IsInternational.Value)

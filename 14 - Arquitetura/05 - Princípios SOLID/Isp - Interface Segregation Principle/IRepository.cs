@@ -1,6 +1,6 @@
 namespace SolidPrinciples.Isp
 {
-    public interface IRepository<T> 
+    public interface IRepository<T>
     {
         void Add(T data);
         void Update(T data);

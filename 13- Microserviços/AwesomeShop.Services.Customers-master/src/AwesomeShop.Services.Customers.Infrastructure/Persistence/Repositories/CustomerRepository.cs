@@ -1,7 +1,7 @@
-using System;
-using System.Threading.Tasks;
 using AwesomeShop.Services.Customers.Core.Entities;
 using AwesomeShop.Services.Customers.Core.Repositories;
+using System;
+using System.Threading.Tasks;
 
 namespace AwesomeShop.Services.Customers.Infrastructure.Persistence.Repositories
 {
@@ -13,7 +13,7 @@ namespace AwesomeShop.Services.Customers.Infrastructure.Persistence.Repositories
         {
             _mongoRepository = mongoRepository;
         }
-        
+
         public async Task AddAsync(Customer customer)
         {
             await _mongoRepository.AddAsync(customer);

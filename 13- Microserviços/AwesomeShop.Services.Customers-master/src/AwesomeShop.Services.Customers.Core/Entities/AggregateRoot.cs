@@ -1,7 +1,6 @@
+using AwesomeShop.Services.Customers.Core.Events;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using AwesomeShop.Services.Customers.Core.Events;
 
 namespace AwesomeShop.Services.Customers.Core.Entities
 {
@@ -11,7 +10,8 @@ namespace AwesomeShop.Services.Customers.Core.Entities
         public Guid Id { get; protected set; }
         public IEnumerable<IDomainEvent> Events => _events;
 
-        protected void AddEvent(IDomainEvent @event) {
+        protected void AddEvent(IDomainEvent @event)
+        {
             _events.Add(@event);
         }
     }

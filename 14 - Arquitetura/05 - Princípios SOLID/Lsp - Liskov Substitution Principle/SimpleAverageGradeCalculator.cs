@@ -13,7 +13,8 @@ namespace SolidPrinciples.Lsp
             Semester = semester;
         }
 
-        public virtual double Calculate(int[] grades) {
+        public virtual double Calculate(int[] grades)
+        {
             var average = Math.Floor(grades.Average());
 
             Console.WriteLine($"Matéria: {Subject} do período {Semester}/{Year} é: {average}");
