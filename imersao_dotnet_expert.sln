@@ -146,6 +146,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - d
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - facade", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-facade\AwesomeShopPatterns.API - facade.csproj", "{16D77239-546E-B307-FA90-A78C1752A388}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - proxy", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-patterns-estruturais\AwesomeShopPatterns.API - proxy.csproj", "{ED35752E-3DDF-1869-87C2-2A15F8BF5D11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -364,6 +366,10 @@ Global
 		{16D77239-546E-B307-FA90-A78C1752A388}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16D77239-546E-B307-FA90-A78C1752A388}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16D77239-546E-B307-FA90-A78C1752A388}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED35752E-3DDF-1869-87C2-2A15F8BF5D11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED35752E-3DDF-1869-87C2-2A15F8BF5D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED35752E-3DDF-1869-87C2-2A15F8BF5D11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED35752E-3DDF-1869-87C2-2A15F8BF5D11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -436,6 +442,7 @@ Global
 		{D2254C69-1E18-8302-B7F2-0B5740F5630E} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
 		{14566E2C-4203-54AE-55CE-2DDD442DC322} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
 		{16D77239-546E-B307-FA90-A78C1752A388} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
+		{ED35752E-3DDF-1869-87C2-2A15F8BF5D11} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BDDE12DE-2A16-4A45-B905-4DF0385FEF49}
