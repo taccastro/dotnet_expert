@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "AwesomeShopPatterns.API": {
+    "Patterns.API": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

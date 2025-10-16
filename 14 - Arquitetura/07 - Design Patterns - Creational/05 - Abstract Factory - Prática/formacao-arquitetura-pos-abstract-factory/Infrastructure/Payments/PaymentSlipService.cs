@@ -1,6 +1,6 @@
-using AwesomeShopPatterns.API.Application.Models;
+using Patterns.API.Application.Models;
 
-namespace AwesomeShopPatterns.API.Infrastructure.Payments
+namespace Patterns.API.Infrastructure.Payments
 {
     public class PaymentSlipService : IPaymentService
     {

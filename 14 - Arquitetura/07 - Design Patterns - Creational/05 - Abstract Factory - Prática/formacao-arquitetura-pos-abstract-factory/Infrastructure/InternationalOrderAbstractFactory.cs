@@ -1,29 +1,33 @@
-using AwesomeShopPatterns.API.Core.Enums;
-using AwesomeShopPatterns.API.Infrastructure.Deliveries;
-using AwesomeShopPatterns.API.Infrastructure.Payments;
+using Patterns.API.Core.Enums;
+using Patterns.API.Infrastructure.Deliveries;
+using Patterns.API.Infrastructure.Payments;
 
-namespace AwesomeShopPatterns.API.Infrastructure
+namespace Patterns.API.Infrastructure
 {
     public class InternationalOrderAbstractFactory : IOrderAbstractFactory
     {
-        public readonly IPaymentService _paymentService;
-        public readonly IDeliveryService _deliveryService;
+        private readonly InternationalDeliveryService _internationalDeliveryService;
+        private readonly CreditCardService _creditCardService;
+
         public InternationalOrderAbstractFactory(
-            CreditCardService creditCardService,
-            InternationalDeliveryService internationalDeliveryService)
+            InternationalDeliveryService internationalDeliveryService,
+            CreditCardService creditCardService)
         {
-            _paymentService = creditCardService;
-            _deliveryService = internationalDeliveryService;
+            _internationalDeliveryService = internationalDeliveryService;
+            _creditCardService = creditCardService;
         }
 
         public IDeliveryService GetDeliveryService()
         {
-            return _deliveryService;
+            return _internationalDeliveryService;
         }
 
         public IPaymentService GetPaymentService(PaymentMethod method)
         {
-            return _paymentService;
+            if (method != PaymentMethod.CreditCard)
+                throw new InvalidOperationException("Somente cartão de crédito é aceito para pedidos internacionais.");
+
+            return _creditCardService;
         }
     }
 }

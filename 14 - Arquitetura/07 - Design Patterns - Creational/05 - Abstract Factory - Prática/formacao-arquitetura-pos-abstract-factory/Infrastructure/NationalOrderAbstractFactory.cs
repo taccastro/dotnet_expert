@@ -1,20 +1,23 @@
-using AwesomeShopPatterns.API.Core.Enums;
-using AwesomeShopPatterns.API.Infrastructure.Deliveries;
-using AwesomeShopPatterns.API.Infrastructure.Payments;
+using Patterns.API.Core.Enums;
+using Patterns.API.Infrastructure.Deliveries;
+using Patterns.API.Infrastructure.Payments;
 
-namespace AwesomeShopPatterns.API.Infrastructure
+namespace Patterns.API.Infrastructure
 {
     public class NationalOrderAbstractFactory : IOrderAbstractFactory
     {
         private readonly NationalDeliveryService _nationalDeliveryService;
-        private readonly IPaymentServiceFactory _paymentServiceFactory;
+        private readonly CreditCardService _creditCardService;
+        private readonly PaymentSlipService _paymentSlipService;
 
         public NationalOrderAbstractFactory(
             NationalDeliveryService nationalDeliveryService,
-            IPaymentServiceFactory paymentServiceFactory)
+            CreditCardService creditCardService,
+            PaymentSlipService paymentSlipService)
         {
             _nationalDeliveryService = nationalDeliveryService;
-            _paymentServiceFactory = paymentServiceFactory;
+            _creditCardService = creditCardService;
+            _paymentSlipService = paymentSlipService;
         }
 
         public IDeliveryService GetDeliveryService()
@@ -24,7 +27,12 @@ namespace AwesomeShopPatterns.API.Infrastructure
 
         public IPaymentService GetPaymentService(PaymentMethod method)
         {
-            return _paymentServiceFactory.GetService(method);
+            return method switch
+            {
+                PaymentMethod.CreditCard => _creditCardService,
+                PaymentMethod.PaymentSlip => _paymentSlipService,
+                _ => throw new InvalidOperationException("Método de pagamento inválido.")
+            };
         }
     }
 }

@@ -1,8 +1,8 @@
-using AwesomeShopPatterns.API.Core.Enums;
-using AwesomeShopPatterns.API.Infrastructure.Deliveries;
-using AwesomeShopPatterns.API.Infrastructure.Payments;
+using Patterns.API.Core.Enums;
+using Patterns.API.Infrastructure.Deliveries;
+using Patterns.API.Infrastructure.Payments;
 
-namespace AwesomeShopPatterns.API.Infrastructure
+namespace Patterns.API.Infrastructure
 {
     public interface IOrderAbstractFactory
     {

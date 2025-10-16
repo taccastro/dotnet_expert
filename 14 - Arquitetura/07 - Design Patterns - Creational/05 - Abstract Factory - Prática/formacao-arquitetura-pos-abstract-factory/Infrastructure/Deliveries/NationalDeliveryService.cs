@@ -1,6 +1,6 @@
-using AwesomeShopPatterns.API.Application.Models;
+using Patterns.API.Application.Models;
 
-namespace AwesomeShopPatterns.API.Infrastructure.Deliveries
+namespace Patterns.API.Infrastructure.Deliveries
 {
     public class NationalDeliveryService : IDeliveryService
     {
