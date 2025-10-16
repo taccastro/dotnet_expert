@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36511.14 d17.14
+VisualStudioVersion = 17.14.36511.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - APIs com ASP.NET Core", "03 - APIs com ASP.NET Core", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -128,16 +128,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DESIGN PATTERNS", "DESIGN P
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "creational", "creational", "{FE439BEF-1447-4EB9-8392-C57ED698A03F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - Factory Method", "14 - Arquitetura\07 - Design Patterns - Creational\03 - Factory Method - Prática\formacao-arquitetura-pos-factory-method\AwesomeShopPatterns.API - Factory Method.csproj", "{A3A2E871-055E-3271-81FA-538E2FD3AD35}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - Abstract Factory", "14 - Arquitetura\07 - Design Patterns - Creational\05 - Abstract Factory - Prática\formacao-arquitetura-pos-abstract-factory\Patterns.API - Abstract Factory.csproj", "{ACC06187-CC7B-E5A1-4002-EACC4A971AC2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - Builder", "14 - Arquitetura\07 - Design Patterns - Creational\07 - Builder - Prática\formacao-arquitetura-pos-builder\AwesomeShopPatterns.API - Builder.csproj", "{2321D373-AE32-CB22-D0D5-99CF68963776}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - Prototype", "14 - Arquitetura\07 - Design Patterns - Creational\09 - Prototype - Prática\formacao-arquitetura-pos-prototype\AwesomeShopPatterns.API - Prototype.csproj", "{03DCC52F-BAAD-8F14-505D-E256282134DD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - singleton", "14 - Arquitetura\07 - Design Patterns - Creational\11 - Singleton - Prática\formacao-arquitetura-pos-singleton\AwesomeShopPatterns.API - singleton.csproj", "{6287CAD1-6F2B-1898-E03F-628880E8815F}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "structural", "structural", "{2731DB81-D1CC-4243-8AB8-E47785142DE5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API -adpater", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-adapter\AwesomeShopPatterns.API -adpater.csproj", "{D2254C69-1E18-8302-B7F2-0B5740F5630E}"
@@ -146,13 +136,23 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - d
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - facade", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-facade\AwesomeShopPatterns.API - facade.csproj", "{16D77239-546E-B307-FA90-A78C1752A388}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - composite", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-patterns-estruturais-composite\AwesomeShopPatterns.API - composite.csproj", "{C16EB8E2-FD32-1172-B9D6-363F45DB10F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - Abstract Factory", "14 - Arquitetura\07 - Design Patterns - Creational\formacao-arquitetura-pos-abstract-factory\Patterns.API - Abstract Factory.csproj", "{16D9672E-D60D-744F-F479-1808B3E279C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - proxy", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-patterns-estruturais - proxy\AwesomeShopPatterns.API - proxy.csproj", "{5EE572F0-E729-EDA6-295F-25A8D7B4FD84}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - Builder", "14 - Arquitetura\07 - Design Patterns - Creational\formacao-arquitetura-pos-builder\AwesomeShopPatterns.API - Builder.csproj", "{64A57AB6-AB80-A24B-AAC7-4EEFE8D5D5F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - bridge", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-patterns-estruturais-bridge\AwesomeShopPatterns.API - bridge.csproj", "{3C1F8912-4170-27EF-3CCF-FFF3FF4D5F24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - Factory Method", "14 - Arquitetura\07 - Design Patterns - Creational\formacao-arquitetura-pos-factory-method\AwesomeShopPatterns.API - Factory Method.csproj", "{4BD4D7DD-2CB4-CE6D-33C3-5E9729547908}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - Flyweight", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-patterns-estruturais-Flyweight\AwesomeShopPatterns.API - Flyweight.csproj", "{3126373A-8BF2-91D3-A20B-2D1375BBD518}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - Prototype", "14 - Arquitetura\07 - Design Patterns - Creational\formacao-arquitetura-pos-prototype\AwesomeShopPatterns.API - Prototype.csproj", "{57118C0D-AF27-198B-D8A6-A72C3730FE70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - singleton", "14 - Arquitetura\07 - Design Patterns - Creational\formacao-arquitetura-pos-singleton\AwesomeShopPatterns.API - singleton.csproj", "{A74FCBD5-8065-79A1-E596-33EFCD22EA55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - bridge", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-bridge\AwesomeShopPatterns.API - bridge.csproj", "{897E783C-4CB7-92ED-5A34-2CF79D77D59A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - composite", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-composite\AwesomeShopPatterns.API - composite.csproj", "{5BE593FF-1E11-B068-FDF8-C92333FE8EED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - Flyweight", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-Flyweight\AwesomeShopPatterns.API - Flyweight.csproj", "{5962DE01-3910-4321-CA65-4087572C09C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - proxy", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-proxy\AwesomeShopPatterns.API - proxy.csproj", "{F6BE2A21-9BC0-FB08-76D8-E81475DE8F0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -340,26 +340,6 @@ Global
 		{4B7A1672-AF29-FDBF-465A-A48F3B147AB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B7A1672-AF29-FDBF-465A-A48F3B147AB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B7A1672-AF29-FDBF-465A-A48F3B147AB8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A3A2E871-055E-3271-81FA-538E2FD3AD35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3A2E871-055E-3271-81FA-538E2FD3AD35}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3A2E871-055E-3271-81FA-538E2FD3AD35}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A3A2E871-055E-3271-81FA-538E2FD3AD35}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ACC06187-CC7B-E5A1-4002-EACC4A971AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ACC06187-CC7B-E5A1-4002-EACC4A971AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ACC06187-CC7B-E5A1-4002-EACC4A971AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ACC06187-CC7B-E5A1-4002-EACC4A971AC2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2321D373-AE32-CB22-D0D5-99CF68963776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2321D373-AE32-CB22-D0D5-99CF68963776}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2321D373-AE32-CB22-D0D5-99CF68963776}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2321D373-AE32-CB22-D0D5-99CF68963776}.Release|Any CPU.Build.0 = Release|Any CPU
-		{03DCC52F-BAAD-8F14-505D-E256282134DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{03DCC52F-BAAD-8F14-505D-E256282134DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{03DCC52F-BAAD-8F14-505D-E256282134DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{03DCC52F-BAAD-8F14-505D-E256282134DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6287CAD1-6F2B-1898-E03F-628880E8815F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6287CAD1-6F2B-1898-E03F-628880E8815F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6287CAD1-6F2B-1898-E03F-628880E8815F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6287CAD1-6F2B-1898-E03F-628880E8815F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D2254C69-1E18-8302-B7F2-0B5740F5630E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D2254C69-1E18-8302-B7F2-0B5740F5630E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2254C69-1E18-8302-B7F2-0B5740F5630E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -372,22 +352,42 @@ Global
 		{16D77239-546E-B307-FA90-A78C1752A388}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16D77239-546E-B307-FA90-A78C1752A388}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16D77239-546E-B307-FA90-A78C1752A388}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C16EB8E2-FD32-1172-B9D6-363F45DB10F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C16EB8E2-FD32-1172-B9D6-363F45DB10F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C16EB8E2-FD32-1172-B9D6-363F45DB10F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C16EB8E2-FD32-1172-B9D6-363F45DB10F4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5EE572F0-E729-EDA6-295F-25A8D7B4FD84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5EE572F0-E729-EDA6-295F-25A8D7B4FD84}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5EE572F0-E729-EDA6-295F-25A8D7B4FD84}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5EE572F0-E729-EDA6-295F-25A8D7B4FD84}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3C1F8912-4170-27EF-3CCF-FFF3FF4D5F24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C1F8912-4170-27EF-3CCF-FFF3FF4D5F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C1F8912-4170-27EF-3CCF-FFF3FF4D5F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C1F8912-4170-27EF-3CCF-FFF3FF4D5F24}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3126373A-8BF2-91D3-A20B-2D1375BBD518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3126373A-8BF2-91D3-A20B-2D1375BBD518}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3126373A-8BF2-91D3-A20B-2D1375BBD518}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3126373A-8BF2-91D3-A20B-2D1375BBD518}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16D9672E-D60D-744F-F479-1808B3E279C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16D9672E-D60D-744F-F479-1808B3E279C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16D9672E-D60D-744F-F479-1808B3E279C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16D9672E-D60D-744F-F479-1808B3E279C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64A57AB6-AB80-A24B-AAC7-4EEFE8D5D5F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64A57AB6-AB80-A24B-AAC7-4EEFE8D5D5F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64A57AB6-AB80-A24B-AAC7-4EEFE8D5D5F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64A57AB6-AB80-A24B-AAC7-4EEFE8D5D5F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BD4D7DD-2CB4-CE6D-33C3-5E9729547908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BD4D7DD-2CB4-CE6D-33C3-5E9729547908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BD4D7DD-2CB4-CE6D-33C3-5E9729547908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BD4D7DD-2CB4-CE6D-33C3-5E9729547908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57118C0D-AF27-198B-D8A6-A72C3730FE70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57118C0D-AF27-198B-D8A6-A72C3730FE70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57118C0D-AF27-198B-D8A6-A72C3730FE70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57118C0D-AF27-198B-D8A6-A72C3730FE70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A74FCBD5-8065-79A1-E596-33EFCD22EA55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A74FCBD5-8065-79A1-E596-33EFCD22EA55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A74FCBD5-8065-79A1-E596-33EFCD22EA55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A74FCBD5-8065-79A1-E596-33EFCD22EA55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{897E783C-4CB7-92ED-5A34-2CF79D77D59A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{897E783C-4CB7-92ED-5A34-2CF79D77D59A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{897E783C-4CB7-92ED-5A34-2CF79D77D59A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{897E783C-4CB7-92ED-5A34-2CF79D77D59A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BE593FF-1E11-B068-FDF8-C92333FE8EED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BE593FF-1E11-B068-FDF8-C92333FE8EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BE593FF-1E11-B068-FDF8-C92333FE8EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BE593FF-1E11-B068-FDF8-C92333FE8EED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5962DE01-3910-4321-CA65-4087572C09C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5962DE01-3910-4321-CA65-4087572C09C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5962DE01-3910-4321-CA65-4087572C09C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5962DE01-3910-4321-CA65-4087572C09C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6BE2A21-9BC0-FB08-76D8-E81475DE8F0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6BE2A21-9BC0-FB08-76D8-E81475DE8F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6BE2A21-9BC0-FB08-76D8-E81475DE8F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6BE2A21-9BC0-FB08-76D8-E81475DE8F0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -451,19 +451,19 @@ Global
 		{3CCAC587-30CC-44C0-8900-188191620AED} = {7934B5DE-E06A-45E6-ABA4-D3AB8A54E4D8}
 		{F3526533-69BE-4D10-BE50-D1DD23A93D2D} = {7934B5DE-E06A-45E6-ABA4-D3AB8A54E4D8}
 		{FE439BEF-1447-4EB9-8392-C57ED698A03F} = {F3526533-69BE-4D10-BE50-D1DD23A93D2D}
-		{A3A2E871-055E-3271-81FA-538E2FD3AD35} = {FE439BEF-1447-4EB9-8392-C57ED698A03F}
-		{ACC06187-CC7B-E5A1-4002-EACC4A971AC2} = {FE439BEF-1447-4EB9-8392-C57ED698A03F}
-		{2321D373-AE32-CB22-D0D5-99CF68963776} = {FE439BEF-1447-4EB9-8392-C57ED698A03F}
-		{03DCC52F-BAAD-8F14-505D-E256282134DD} = {FE439BEF-1447-4EB9-8392-C57ED698A03F}
-		{6287CAD1-6F2B-1898-E03F-628880E8815F} = {FE439BEF-1447-4EB9-8392-C57ED698A03F}
 		{2731DB81-D1CC-4243-8AB8-E47785142DE5} = {F3526533-69BE-4D10-BE50-D1DD23A93D2D}
 		{D2254C69-1E18-8302-B7F2-0B5740F5630E} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
 		{14566E2C-4203-54AE-55CE-2DDD442DC322} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
 		{16D77239-546E-B307-FA90-A78C1752A388} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
-		{C16EB8E2-FD32-1172-B9D6-363F45DB10F4} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
-		{5EE572F0-E729-EDA6-295F-25A8D7B4FD84} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
-		{3C1F8912-4170-27EF-3CCF-FFF3FF4D5F24} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
-		{3126373A-8BF2-91D3-A20B-2D1375BBD518} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
+		{16D9672E-D60D-744F-F479-1808B3E279C1} = {FE439BEF-1447-4EB9-8392-C57ED698A03F}
+		{64A57AB6-AB80-A24B-AAC7-4EEFE8D5D5F8} = {FE439BEF-1447-4EB9-8392-C57ED698A03F}
+		{4BD4D7DD-2CB4-CE6D-33C3-5E9729547908} = {FE439BEF-1447-4EB9-8392-C57ED698A03F}
+		{57118C0D-AF27-198B-D8A6-A72C3730FE70} = {FE439BEF-1447-4EB9-8392-C57ED698A03F}
+		{A74FCBD5-8065-79A1-E596-33EFCD22EA55} = {FE439BEF-1447-4EB9-8392-C57ED698A03F}
+		{897E783C-4CB7-92ED-5A34-2CF79D77D59A} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
+		{5BE593FF-1E11-B068-FDF8-C92333FE8EED} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
+		{5962DE01-3910-4321-CA65-4087572C09C0} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
+		{F6BE2A21-9BC0-FB08-76D8-E81475DE8F0A} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BDDE12DE-2A16-4A45-B905-4DF0385FEF49}
