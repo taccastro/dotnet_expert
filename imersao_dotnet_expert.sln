@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 18
-VisualStudioVersion = 18.0.11111.16
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - APIs com ASP.NET Core", "03 - APIs com ASP.NET Core", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -149,6 +149,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - composite", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-patterns-estruturais-composite\AwesomeShopPatterns.API - composite.csproj", "{C16EB8E2-FD32-1172-B9D6-363F45DB10F4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API-proxy", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-patterns-estruturais - proxy\AwesomeShopPatterns.API-proxy.csproj", "{5EE572F0-E729-EDA6-295F-25A8D7B4FD84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-patterns-estruturais-bridge\AwesomeShopPatterns.API.csproj", "{3C1F8912-4170-27EF-3CCF-FFF3FF4D5F24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -376,6 +378,10 @@ Global
 		{5EE572F0-E729-EDA6-295F-25A8D7B4FD84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EE572F0-E729-EDA6-295F-25A8D7B4FD84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EE572F0-E729-EDA6-295F-25A8D7B4FD84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C1F8912-4170-27EF-3CCF-FFF3FF4D5F24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C1F8912-4170-27EF-3CCF-FFF3FF4D5F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C1F8912-4170-27EF-3CCF-FFF3FF4D5F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C1F8912-4170-27EF-3CCF-FFF3FF4D5F24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -450,6 +456,7 @@ Global
 		{16D77239-546E-B307-FA90-A78C1752A388} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
 		{C16EB8E2-FD32-1172-B9D6-363F45DB10F4} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
 		{5EE572F0-E729-EDA6-295F-25A8D7B4FD84} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
+		{3C1F8912-4170-27EF-3CCF-FFF3FF4D5F24} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BDDE12DE-2A16-4A45-B905-4DF0385FEF49}
