@@ -148,9 +148,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - f
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - composite", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-patterns-estruturais-composite\AwesomeShopPatterns.API - composite.csproj", "{C16EB8E2-FD32-1172-B9D6-363F45DB10F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API-proxy", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-patterns-estruturais - proxy\AwesomeShopPatterns.API-proxy.csproj", "{5EE572F0-E729-EDA6-295F-25A8D7B4FD84}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - proxy", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-patterns-estruturais - proxy\AwesomeShopPatterns.API - proxy.csproj", "{5EE572F0-E729-EDA6-295F-25A8D7B4FD84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-patterns-estruturais-bridge\AwesomeShopPatterns.API.csproj", "{3C1F8912-4170-27EF-3CCF-FFF3FF4D5F24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - bridge", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-patterns-estruturais-bridge\AwesomeShopPatterns.API - bridge.csproj", "{3C1F8912-4170-27EF-3CCF-FFF3FF4D5F24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - Flyweight", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-patterns-estruturais-Flyweight\AwesomeShopPatterns.API - Flyweight.csproj", "{3126373A-8BF2-91D3-A20B-2D1375BBD518}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -382,6 +384,10 @@ Global
 		{3C1F8912-4170-27EF-3CCF-FFF3FF4D5F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C1F8912-4170-27EF-3CCF-FFF3FF4D5F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C1F8912-4170-27EF-3CCF-FFF3FF4D5F24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3126373A-8BF2-91D3-A20B-2D1375BBD518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3126373A-8BF2-91D3-A20B-2D1375BBD518}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3126373A-8BF2-91D3-A20B-2D1375BBD518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3126373A-8BF2-91D3-A20B-2D1375BBD518}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -457,6 +463,7 @@ Global
 		{C16EB8E2-FD32-1172-B9D6-363F45DB10F4} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
 		{5EE572F0-E729-EDA6-295F-25A8D7B4FD84} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
 		{3C1F8912-4170-27EF-3CCF-FFF3FF4D5F24} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
+		{3126373A-8BF2-91D3-A20B-2D1375BBD518} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BDDE12DE-2A16-4A45-B905-4DF0385FEF49}
