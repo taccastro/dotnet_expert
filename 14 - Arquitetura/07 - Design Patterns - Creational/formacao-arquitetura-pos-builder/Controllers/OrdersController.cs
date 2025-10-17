@@ -1,6 +1,5 @@
 using AwesomeShopPatterns.API.Application.Models;
-using AwesomeShopPatterns.API.Infrastructure;
-using AwesomeShopPatterns.API.Infrastructure.Payments;
+using AwesomeShopPatterns.API.Infrastructure.Payments.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AwesomeShopPatterns.API.Controllers
@@ -9,36 +8,30 @@ namespace AwesomeShopPatterns.API.Controllers
     [Route("api/orders")]
     public class OrdersController : ControllerBase
     {
-        private readonly IPaymentServiceFactory _paymentServiceFactory;
-        public OrdersController(
-            IPaymentServiceFactory paymentServiceFactory)
+        [HttpPost]
+        public IActionResult Post(OrderInputModel model)
         {
-            _paymentServiceFactory = paymentServiceFactory;
+            // Exemplo de uso do padrão Builder
+            var paymentSlip = new PaymentSlipBuilder()
+                .WithPayer(model.CustomerName ?? "Cliente Desconhecido")
+                .WithAmount(model.TotalAmount)
+                .WithDueDate(DateTime.Now.AddDays(5))
+                .Build();
+
+            return Ok(paymentSlip);
         }
 
-        [HttpPost]
-        public IActionResult Post(
-            [FromServices] InternationalOrderAbstractFactory internationalOrderAbstractFactory,
-            [FromServices] NationalOrderAbstractFactory nationalOrderAbstractFactory,
-            OrderInputModel model
-            )
+        [HttpGet("example")]
+        public IActionResult Example()
         {
-            IOrderAbstractFactory orderAbstractFactory;
+            // Endpoint simples para testar o Builder sem enviar nada
+            var paymentSlip = new PaymentSlipBuilder()
+                .WithPayer("Tiago Castro")
+                .WithAmount(150.00m)
+                .WithDueDate(DateTime.Now.AddDays(5))
+                .Build();
 
-            if (model.IsInternational != null && model.IsInternational.Value)
-                orderAbstractFactory = internationalOrderAbstractFactory;
-            else
-                orderAbstractFactory = nationalOrderAbstractFactory;
-
-            var paymentResult = orderAbstractFactory
-                .GetPaymentService(model.PaymentInfo.PaymentMethod)
-                .Process(model);
-
-            orderAbstractFactory
-                .GetDeliveryService()
-                .Deliver(model);
-
-            return NoContent();
+            return Ok(paymentSlip);
         }
     }
 }

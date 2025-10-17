@@ -2,53 +2,31 @@ namespace AwesomeShopPatterns.API.Infrastructure.Payments.Models
 {
     public class PaymentSlipBuilder
     {
-        private PaymentSlipModel _paymentSlipModel;
+        private readonly PaymentSlipModel _paymentSlip = new();
 
-        public PaymentSlipBuilder()
+        public PaymentSlipBuilder WithPayer(string payer)
         {
-        }
-
-        public PaymentSlipBuilder Start()
-        {
-            _paymentSlipModel = new PaymentSlipModel();
-
+            _paymentSlip.Payer = payer;
             return this;
         }
 
-        public PaymentSlipBuilder WithReceiver(Receiver receiver)
+        public PaymentSlipBuilder WithAmount(decimal amount)
         {
-            _paymentSlipModel.Receiver = receiver;
-
+            _paymentSlip.Amount = amount;
             return this;
         }
 
-        public PaymentSlipBuilder WithPayer(Payer payer)
+        public PaymentSlipBuilder WithDueDate(DateTime dueDate)
         {
-            _paymentSlipModel.Payer = payer;
-
-            return this;
-        }
-
-        public PaymentSlipBuilder WithPaymentDocument(string barCode, string ourNumber, decimal documentAmount)
-        {
-            _paymentSlipModel.BarCode = barCode;
-            _paymentSlipModel.OurNumber = ourNumber;
-            _paymentSlipModel.DocumentAmount = documentAmount;
-
-            return this;
-        }
-
-        public PaymentSlipBuilder WithDates(DateTime processedAt, DateTime expiresAt)
-        {
-            _paymentSlipModel.ProcessedAt = processedAt;
-            _paymentSlipModel.ExpiresAt = expiresAt;
-
+            _paymentSlip.DueDate = dueDate;
             return this;
         }
 
         public PaymentSlipModel Build()
         {
-            return _paymentSlipModel;
+            _paymentSlip.BarCode = $"34191.79001 {new Random().Next(10000, 99999)} 12345.678901 2 12340000015000";
+            _paymentSlip.GeneratedAt = DateTime.Now;
+            return _paymentSlip;
         }
     }
 }
