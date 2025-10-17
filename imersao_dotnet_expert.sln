@@ -140,7 +140,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - Abstract Fac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - Builder", "14 - Arquitetura\07 - Design Patterns - Creational\formacao-arquitetura-pos-builder\Patterns.API - Builder.csproj", "{64A57AB6-AB80-A24B-AAC7-4EEFE8D5D5F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - Factory Method", "14 - Arquitetura\07 - Design Patterns - Creational\formacao-arquitetura-pos-factory-method\AwesomeShopPatterns.API - Factory Method.csproj", "{4BD4D7DD-2CB4-CE6D-33C3-5E9729547908}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - Factory Method", "14 - Arquitetura\07 - Design Patterns - Creational\formacao-arquitetura-pos-factory-method\Patterns.API - Factory Method.csproj", "{4BD4D7DD-2CB4-CE6D-33C3-5E9729547908}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - Prototype", "14 - Arquitetura\07 - Design Patterns - Creational\formacao-arquitetura-pos-prototype\Patterns.API - Prototype.csproj", "{57118C0D-AF27-198B-D8A6-A72C3730FE70}"
 EndProject
