@@ -16,7 +16,8 @@ namespace AwesomeShopPatterns.API.Controllers
         [HttpPost("singleton")]
         public IActionResult PostSingleton(
             OrderInputModel model
-            ) {
+            )
+        {
             return Ok(BusinessHours.GetInstance());
         }
 
@@ -29,7 +30,7 @@ namespace AwesomeShopPatterns.API.Controllers
         {
             var itemsDictionary = model.Items.ToDictionary(d => d.ProductId, d => d.Quantity);
             var hasStock = productRepository.HasStock(itemsDictionary);
-            
+
             if (!hasStock)
                 return BadRequest();
 
@@ -47,7 +48,8 @@ namespace AwesomeShopPatterns.API.Controllers
             return NoContent();
         }
 
-        [HttpPost("using-chain")]
+        //Usando Chain of Responsibility
+        [HttpPost("using-ChainOfResponsibility")]
         public IActionResult PostWithChain(
             OrderInputModel model,
             [FromServices] IProductRepository productRepository,
@@ -61,12 +63,12 @@ namespace AwesomeShopPatterns.API.Controllers
             validateCustomerHandler
                 .SetNext(validateStockHandler)
                 .SetNext(checkForFraudHandler);
-            
+
             bool success = validateCustomerHandler.Handle(model);
-            
+
             if (!success)
                 return BadRequest();
-                
+
             return NoContent();
         }
 
@@ -85,15 +87,16 @@ namespace AwesomeShopPatterns.API.Controllers
             var total = model.Items.Sum(i => i.Price * i.Quantity);
 
             var isFraud = fraudCheckService.IsFraudV2(total, model.Customer.Id, model.Customer.FullName, model.Customer.Document);
-            
+
             if (isFraud)
                 return BadRequest();
 
-            var message = new {
+            var message = new
+            {
                 total,
                 customerId = model.Customer.Id,
                 fullName = model.Customer.FullName,
-                document = model.Customer.Document 
+                document = model.Customer.Document
             };
 
             // Chamar um serviço de mensageria para enviar esse objeto como JSON
@@ -114,17 +117,17 @@ namespace AwesomeShopPatterns.API.Controllers
 
             if (isFraud)
                 return BadRequest();
-                
+
             // Chamar um serviço de mensageria para enviar esse objeto como JSON
             // Guardar um log desse objeto
 
             return NoContent();
         }
 
-        public IActionResult OrderState(OrderInputModel model)
-        {
-            return NoContent();
-        }
+        //public IActionResult OrderState(OrderInputModel model)
+        //{
+        //    return NoContent();
+        //}
 
     }
 }
