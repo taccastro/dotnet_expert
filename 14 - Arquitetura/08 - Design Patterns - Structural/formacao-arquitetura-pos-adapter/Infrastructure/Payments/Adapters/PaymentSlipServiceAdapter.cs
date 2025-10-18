@@ -14,17 +14,27 @@ namespace AwesomeShopPatterns.API.Infrastructure.Payments.Adapters
 
         public PaymentSlipModel GeneratePaymentSlip(OrderInputModel model)
         {
+            // Chama o serviço externo e obtém o modelo de boleto externo
             var externalModel = _externalService.GeneratePaymentSlip(model);
 
-            var builder = new PaymentSlipBuilder();
-
-            var paymentSlipModel = builder
-                .Start()
-                .WithPayer(new Payer(externalModel.payer_name, externalModel.payer_doc, externalModel.payer_addr))
-                .WithReceiver(new Receiver(externalModel.receiver_name, externalModel.receiver_doc, externalModel.receiver_addr))
-                .WithPaymentDocument(externalModel.bar_code, externalModel.number, externalModel.doc_amount)
-                .WithDates(externalModel.proc_date, externalModel.exp_date)
-                .Build();
+            // Cria o modelo interno usando o Adapter
+            var paymentSlipModel = new PaymentSlipModel(
+                externalModel.bar_code,
+                externalModel.number,
+                externalModel.exp_date,
+                externalModel.proc_date,
+                externalModel.doc_amount,
+                new Payer(
+                    externalModel.payer_name,
+                    externalModel.payer_doc,
+                    externalModel.payer_addr
+                ),
+                new Receiver(
+                    externalModel.receiver_name,
+                    externalModel.receiver_doc,
+                    externalModel.receiver_addr
+                )
+            );
 
             return paymentSlipModel;
         }

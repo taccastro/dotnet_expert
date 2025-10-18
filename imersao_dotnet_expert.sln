@@ -130,7 +130,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "creational", "creational", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "structural", "structural", "{2731DB81-D1CC-4243-8AB8-E47785142DE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API -adpater", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-adapter\AwesomeShopPatterns.API -adpater.csproj", "{D2254C69-1E18-8302-B7F2-0B5740F5630E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API -adpater", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-adapter\Patterns.API -adpater.csproj", "{D2254C69-1E18-8302-B7F2-0B5740F5630E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - decorator", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-decorator\AwesomeShopPatterns.API - decorator.csproj", "{14566E2C-4203-54AE-55CE-2DDD442DC322}"
 EndProject
