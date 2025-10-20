@@ -1,28 +1,23 @@
-using AwesomeShopPatterns.API.Application;
 using AwesomeShopPatterns.API.Infrastructure;
 using AwesomeShopPatterns.API.Infrastructure.Proxies;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddMemoryCache();
-builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
-
-builder.Services.AddScoped<CustomerRepositoryProxy>();
-
-builder.Services.AddSingleton<PaymentMethodsFactory>();
-
-builder.Services.AddControllers();
-
 builder.Services.AddHttpContextAccessor();
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+// Repositório real
+builder.Services.AddScoped<CustomerRepository>();
+
+// Proxy é quem será injetado na controller (implementa a interface)
+builder.Services.AddScoped<ICustomerRepository, CustomerRepositoryProxy>();
+
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -30,9 +25,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

@@ -1,8 +1,5 @@
-﻿using AwesomeShopPatterns.API.Core.Entities;
-using AwesomeShopPatterns.API.Infrastructure;
-using AwesomeShopPatterns.API.Infrastructure.Proxies;
+﻿using AwesomeShopPatterns.API.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Caching.Memory;
 
 namespace AwesomeShopPatterns.API.Controllers
 {
@@ -10,13 +7,20 @@ namespace AwesomeShopPatterns.API.Controllers
     [ApiController]
     public class CustomersController : ControllerBase
     {
-        [HttpGet("get-blocked-customers")]
-        public IActionResult GetBlockedCustomers([FromServices] CustomerRepositoryProxy proxy)
-        {
-            var blockedCustomers = proxy.GetBlockedCustomers();
+        private readonly ICustomerRepository _customerRepository;
 
-            if (blockedCustomers == null)
-                return Unauthorized();
+        public CustomersController(ICustomerRepository customerRepository)
+        {
+            _customerRepository = customerRepository;
+        }
+
+        [HttpGet("blocked")]
+        public IActionResult GetBlockedCustomers()
+        {
+            var blockedCustomers = _customerRepository.GetBlockedCustomers();
+
+            if (blockedCustomers == null || !blockedCustomers.Any())
+                return NotFound("Nenhum cliente bloqueado encontrado.");
 
             return Ok(blockedCustomers);
         }
