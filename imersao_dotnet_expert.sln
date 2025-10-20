@@ -150,7 +150,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - bridge", "14
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - composite", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-composite\AwesomeShopPatterns.API - composite.csproj", "{5BE593FF-1E11-B068-FDF8-C92333FE8EED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - Flyweight", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-Flyweight\AwesomeShopPatterns.API - Flyweight.csproj", "{5962DE01-3910-4321-CA65-4087572C09C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - Flyweight", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-Flyweight\Patterns.API - Flyweight.csproj", "{5962DE01-3910-4321-CA65-4087572C09C0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - proxy", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-proxy\Patterns.API - proxy.csproj", "{F6BE2A21-9BC0-FB08-76D8-E81475DE8F0A}"
 EndProject
