@@ -1,15 +1,13 @@
 using Patterns.API.Core.Enums;
-using System;
-using System.Collections.Generic;
 
 namespace Patterns.API.Application.Models
 {
     public class OrderInputModel
-    {   
+    {
         public PaymentInfoInputModel PaymentInfo { get; set; }
         public bool? IsInternational { get; set; }
-    }   
-  
+    }
+
 
     public class PaymentInfoInputModel
     {

@@ -1,5 +1,4 @@
-﻿using AwesomeShopPatterns.API.Application;
-using AwesomeShopPatterns.API.Application.Mediator;
+﻿using AwesomeShopPatterns.API.Application.Mediator;
 using AwesomeShopPatterns.API.Application.Queries;
 using Microsoft.AspNetCore.Mvc;
 

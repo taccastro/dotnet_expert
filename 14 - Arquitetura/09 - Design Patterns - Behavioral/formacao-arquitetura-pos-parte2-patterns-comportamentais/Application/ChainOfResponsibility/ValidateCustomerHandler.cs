@@ -20,7 +20,7 @@ namespace formacao_arquitetura.Application.ChainOfResponsibility
 
             if (!customerAllowedToBuy)
                 return false;
-                
+
             return base.Handle(model);
         }
     }

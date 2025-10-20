@@ -1,5 +1,4 @@
 ﻿using AwesomeShopPatterns.API.Application.Models;
-using AwesomeShopPatterns.API.Core.Entities;
 using formacao_arquitetura.Infrastructure.Payments.Models;
 
 namespace AwesomeShopPatterns.API.Infrastructure.Payments
@@ -18,7 +17,8 @@ namespace AwesomeShopPatterns.API.Infrastructure.Payments
             return false;
         }
 
-        public bool IsFraudV2(decimal totalAmount, Guid customerId, string customerName, string document) {
+        public bool IsFraudV2(decimal totalAmount, Guid customerId, string customerName, string document)
+        {
             return false;
         }
 

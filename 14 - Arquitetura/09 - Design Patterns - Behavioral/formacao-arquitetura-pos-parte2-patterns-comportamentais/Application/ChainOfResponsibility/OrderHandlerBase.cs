@@ -9,7 +9,7 @@ namespace formacao_arquitetura.Application.ChainOfResponsibility
         {
             if (_nextHandler == null)
                 return true;
-            
+
             var result = _nextHandler.Handle(model);
 
             return result;

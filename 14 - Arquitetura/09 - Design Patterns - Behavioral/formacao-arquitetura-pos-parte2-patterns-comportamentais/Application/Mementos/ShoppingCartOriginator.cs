@@ -21,7 +21,7 @@ namespace formacao_arquitetura.Application.Mementos
         }
 
         public Guid CustomerId { get; private set; }
-        public List<KeyValuePair<Guid, int>> Items {get; private set; }
+        public List<KeyValuePair<Guid, int>> Items { get; private set; }
 
         public void Restore(IShoppingCartMemento shoppingCartMemento)
         {

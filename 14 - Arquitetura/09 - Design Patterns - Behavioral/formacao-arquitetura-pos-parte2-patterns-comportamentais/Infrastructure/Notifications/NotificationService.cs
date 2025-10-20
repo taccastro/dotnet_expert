@@ -9,7 +9,8 @@
                 if (message is SmsMessage)
                 {
                     Console.WriteLine("Sms Message!");
-                } else if (message is EmailMessage)
+                }
+                else if (message is EmailMessage)
                 {
                     Console.WriteLine("Email Message!");
                 }

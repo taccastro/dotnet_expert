@@ -1,9 +1,7 @@
-﻿using AwesomeShopPatterns.API.Core.Entities;
-using AwesomeShopPatterns.API.Infrastructure;
+﻿using AwesomeShopPatterns.API.Infrastructure;
 using AwesomeShopPatterns.API.Infrastructure.Proxies;
 using formacao_arquitetura.Application.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Caching.Memory;
 
 namespace AwesomeShopPatterns.API.Controllers
 {
@@ -23,17 +21,19 @@ namespace AwesomeShopPatterns.API.Controllers
         }
 
         [HttpGet("report-notify-blocked-customers")]
-        public IActionResult NotifyBlockedCustomerEmail([FromServices] ICustomerRepository repository) {
+        public IActionResult NotifyBlockedCustomerEmail([FromServices] ICustomerRepository repository)
+        {
             var blockedCustomers = repository.GetBlockedCustomers();
 
             var query = new CustomersToNotifyQueryModel(blockedCustomers, "LuisDev");
-            
-            foreach (var customer in query) {
+
+            foreach (var customer in query)
+            {
                 Console.WriteLine($"Customer: {customer.Key}, Email: {customer.Value}");
             }
 
             Console.WriteLine($"Utilizando acesso direto: {query["Fulano 1"]}");
-            
+
             return Ok();
         }
     }

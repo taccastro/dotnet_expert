@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using AwesomeShopPatterns.API.Core.Entities;
+﻿using AwesomeShopPatterns.API.Core.Entities;
+using Microsoft.AspNetCore.Mvc;
 
 namespace AwesomeShopPatterns.API.Controllers
 {

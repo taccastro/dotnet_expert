@@ -15,10 +15,10 @@ namespace formacao_arquitetura.Application.ChainOfResponsibility
         {
             Console.WriteLine($"Invoking CheckForFraudHandler.Handle");
 
-             var isFraud = _paymentFraudCheckService.IsFraud(model);
+            var isFraud = _paymentFraudCheckService.IsFraud(model);
 
             if (isFraud)
-                return false;    
+                return false;
 
             return base.Handle(model);
         }

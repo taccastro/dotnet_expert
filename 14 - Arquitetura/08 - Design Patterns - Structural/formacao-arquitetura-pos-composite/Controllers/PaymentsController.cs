@@ -1,7 +1,6 @@
 ﻿using AwesomeShopPatterns.API.Application;
 using AwesomeShopPatterns.API.Application.Models;
 using AwesomeShopPatterns.API.Core.Enums;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AwesomeShopPatterns.API.Controllers

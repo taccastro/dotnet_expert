@@ -10,11 +10,13 @@ namespace formacao_arquitetura.Application.Mementos
             _mementos = new List<IShoppingCartMemento>();
         }
 
-        public void Backup() {
+        public void Backup()
+        {
             _mementos.Add(Originator.SaveSnapshot());
         }
 
-        public void Undo() {
+        public void Undo()
+        {
             if (_mementos.Count == 0)
                 return;
 
@@ -23,8 +25,10 @@ namespace formacao_arquitetura.Application.Mementos
             Originator.Restore(lastMemento);
         }
 
-        public void PrintHistory(){
-            foreach (var memento in _mementos) {
+        public void PrintHistory()
+        {
+            foreach (var memento in _mementos)
+            {
                 var items = string.Join(' ', memento.Items.Select(i => $"> Item: {i.Key}, Quantity: {i.Value}"));
 
                 Console.WriteLine($"Customer: {memento.CustomerId}, Items: {items}, Saved At: {memento.SavedAt}\n");

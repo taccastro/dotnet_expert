@@ -1,6 +1,7 @@
 namespace formacao_arquitetura.Application.Mementos
 {
-    public interface IShoppingCartMemento {
+    public interface IShoppingCartMemento
+    {
         Guid CustomerId { get; }
         List<KeyValuePair<Guid, int>> Items { get; }
         DateTime SavedAt { get; }

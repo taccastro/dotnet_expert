@@ -16,21 +16,25 @@ namespace AwesomeShopPatterns.API.Application.Mediator
 
             if (query is null)
                 mediatorResult = new MediatorResult(null, false);
-            
-            if (query is GetProductByIdQuery) {
+
+            if (query is GetProductByIdQuery)
+            {
                 var handler = new GetProductByIdQueryHandler();
 
                 var result = await handler.Handle(query as GetProductByIdQuery);
 
                 mediatorResult = new MediatorResult(result, true);
-            } else if (query is GetAllProductsQuery) {
+            }
+            else if (query is GetAllProductsQuery)
+            {
                 var handler = new GetAllProductsQueryHandler();
 
                 var result = await handler.Handle(query as GetAllProductsQuery);
 
                 mediatorResult = new MediatorResult(result, true);
             }
-            else {
+            else
+            {
                 mediatorResult = new MediatorResult(null, false);
             }
 
@@ -46,12 +50,14 @@ namespace AwesomeShopPatterns.API.Application.Mediator
     public interface IQuery { }
     public interface ICommand { }
 
-    public interface IMediatorResult {
+    public interface IMediatorResult
+    {
         object Data { get; }
         bool Success { get; }
     }
 
-    public class MediatorResult : IMediatorResult {
+    public class MediatorResult : IMediatorResult
+    {
         public MediatorResult(object data, bool success)
         {
             Data = data;

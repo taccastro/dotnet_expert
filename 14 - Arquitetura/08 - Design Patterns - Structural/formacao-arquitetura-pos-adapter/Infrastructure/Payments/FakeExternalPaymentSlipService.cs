@@ -1,6 +1,5 @@
 ﻿using AwesomeShopPatterns.API.Application.Models;
 using AwesomeShopPatterns.API.Infrastructure.Payments.Models;
-using System;
 
 namespace AwesomeShopPatterns.API.Infrastructure.Payments
 {

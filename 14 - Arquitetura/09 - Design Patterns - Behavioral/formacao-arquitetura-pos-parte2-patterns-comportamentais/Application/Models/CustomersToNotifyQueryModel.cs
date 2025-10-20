@@ -1,5 +1,5 @@
-using System.Collections;
 using AwesomeShopPatterns.API.Core.Entities;
+using System.Collections;
 
 namespace formacao_arquitetura.Application.Models
 {
@@ -13,19 +13,23 @@ namespace formacao_arquitetura.Application.Models
             GeneratedBy = generatedBy;
         }
 
-        public string this[string customerFullName] {
-            get {
-                if (_customerAndEmailDict.ContainsKey(customerFullName)) {
+        public string this[string customerFullName]
+        {
+            get
+            {
+                if (_customerAndEmailDict.ContainsKey(customerFullName))
+                {
                     return _customerAndEmailDict[customerFullName];
                 }
 
                 return null;
             }
-            set {
+            set
+            {
                 _customerAndEmailDict[customerFullName] = value;
             }
         }
-        
+
         private Dictionary<string, string> _customerAndEmailDict;
         public DateTime GeneratedAt { get; private set; }
         public string GeneratedBy { get; private set; }

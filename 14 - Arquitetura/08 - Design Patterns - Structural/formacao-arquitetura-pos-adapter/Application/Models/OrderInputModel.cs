@@ -7,4 +7,3 @@ namespace AwesomeShopPatterns.API.Application.Models
         public string CustomerAddress { get; set; }
     }
 }
-   

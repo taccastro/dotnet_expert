@@ -18,7 +18,8 @@ namespace AwesomeShopPatterns.API.Core.Entities
             if (Status == OrderStatus.Started || Status == OrderStatus.Preparing)
             {
                 Items.Add(item);
-            } else
+            }
+            else
             {
                 throw new InvalidOperationException("Invalid operation.");
             }
@@ -29,7 +30,8 @@ namespace AwesomeShopPatterns.API.Core.Entities
             if (Status == OrderStatus.Started)
             {
                 Status = OrderStatus.Preparing;
-            } else
+            }
+            else
             {
                 throw new InvalidOperationException("Invalid operation.");
             }
@@ -40,7 +42,8 @@ namespace AwesomeShopPatterns.API.Core.Entities
             if (Status == OrderStatus.Preparing)
             {
                 Status = OrderStatus.OnWayToDeliver;
-            } else
+            }
+            else
             {
                 throw new InvalidOperationException("Invalid operation.");
             }
@@ -51,7 +54,8 @@ namespace AwesomeShopPatterns.API.Core.Entities
             if (Status == OrderStatus.OnWayToDeliver)
             {
                 Status = OrderStatus.Completed;
-            } else
+            }
+            else
             {
                 throw new InvalidOperationException("Invalid operation.");
             }

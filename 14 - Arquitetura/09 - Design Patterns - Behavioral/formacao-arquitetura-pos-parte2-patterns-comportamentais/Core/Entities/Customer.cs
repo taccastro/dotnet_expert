@@ -17,7 +17,7 @@
         public DateTime BirthDate { get; private set; }
         public CustomerStatus Status { get; private set; }
         public string Email { get; private set; }
-        
+
         public bool IsAllowedToBuy()
         {
             return Status != CustomerStatus.Blocked;
