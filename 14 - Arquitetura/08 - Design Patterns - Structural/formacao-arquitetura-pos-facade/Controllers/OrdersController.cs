@@ -1,60 +1,36 @@
-using AwesomeShopPatterns.API.Application.Models;
-using AwesomeShopPatterns.API.Infrastructure;
-using AwesomeShopPatterns.API.Infrastructure.Payments;
+using Patterns.API.Application.Models;
+using Patterns.API.Infrastructure.Integrations;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AwesomeShopPatterns.API.Controllers
+namespace Patterns.API.Controllers
 {
     [ApiController]
     [Route("api/orders")]
     public class OrdersController : ControllerBase
     {
-        private readonly IPaymentServiceFactory _paymentServiceFactory;
-        public OrdersController(
-            IPaymentServiceFactory paymentServiceFactory)
+        private readonly IAntiFraudFacade _antiFraudFacade;
+
+        public OrdersController(IAntiFraudFacade antiFraudFacade)
         {
-            _paymentServiceFactory = paymentServiceFactory;
-        }
-
-        [HttpPost("simpler")]
-        public IActionResult SimplerPost(
-            [FromServices] IPaymentServiceFactory paymentServiceFactory,
-            OrderInputModel model
-            )
-        {
-
-            var paymentService = paymentServiceFactory.GetService(model.PaymentInfo.PaymentMethod);
-
-            // Precisamos adicionar novos comportamentos ao "paymentService.Process", mas não
-            // queremos alterar sua implementação
-            var paymentResult = paymentService.Process(model);
-
-            return NoContent();
+            _antiFraudFacade = antiFraudFacade;
         }
 
         [HttpPost]
-        public IActionResult Post(
-            [FromServices] InternationalOrderAbstractFactory internationalOrderAbstractFactory,
-            [FromServices] NationalOrderAbstractFactory nationalOrderAbstractFactory,
-            OrderInputModel model
-            )
+        public IActionResult Post([FromBody] OrderInputModel model)
         {
-            IOrderAbstractFactory orderAbstractFactory;
+            // Mapeia os dados do pedido para o modelo de antifraude
+            var antiFraudModel = new AntiFraudModel(
+                document: model.Customer.Document,
+                totalAmount: model.TotalPrice
+            );
 
-            if (model.IsInternational != null && model.IsInternational.Value)
-                orderAbstractFactory = internationalOrderAbstractFactory;
-            else
-                orderAbstractFactory = nationalOrderAbstractFactory;
+            // Envia para o Facade
+            var result = _antiFraudFacade.Check(antiFraudModel);
 
-            var paymentResult = orderAbstractFactory
-                .GetPaymentService(model.PaymentInfo.PaymentMethod)
-                .Process(model);
+            if (!result.IsValid)
+                return BadRequest(new { message = "Pedido reprovado pela análise antifraude." });
 
-            orderAbstractFactory
-                .GetDeliveryService()
-                .Deliver(model);
-
-            return NoContent();
+            return Ok(new { message = "Pedido aprovado e processado com sucesso." });
         }
     }
 }

@@ -1,4 +1,4 @@
-namespace AwesomeShopPatterns.API.Infrastructure.Integrations
+namespace Patterns.API.Infrastructure.Integrations
 {
     public interface IAntiFraudFacade
     {

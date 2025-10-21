@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 18
-VisualStudioVersion = 18.0.11111.16 d18.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - APIs com ASP.NET Core", "03 - APIs com ASP.NET Core", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -134,7 +134,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API -adpater", "14
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - decorator", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-decorator\AwesomeShopPatterns.API - decorator.csproj", "{14566E2C-4203-54AE-55CE-2DDD442DC322}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API - facade", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-facade\AwesomeShopPatterns.API - facade.csproj", "{16D77239-546E-B307-FA90-A78C1752A388}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - facade", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-facade\Patterns.API - facade.csproj", "{16D77239-546E-B307-FA90-A78C1752A388}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - Abstract Factory", "14 - Arquitetura\07 - Design Patterns - Creational\formacao-arquitetura-pos-abstract-factory\Patterns.API - Abstract Factory.csproj", "{16D9672E-D60D-744F-F479-1808B3E279C1}"
 EndProject

@@ -1,9 +1,8 @@
-namespace AwesomeShopPatterns.API.Infrastructure.Integrations
+namespace Patterns.API.Infrastructure.Integrations
 {
-    public record AntiFraudResultModel
+    public class AntiFraudResultModel
     {
-        public bool CheckResult { get; set; }
+        public bool IsValid { get; set; }
         public string Comments { get; set; }
     }
-
 }
