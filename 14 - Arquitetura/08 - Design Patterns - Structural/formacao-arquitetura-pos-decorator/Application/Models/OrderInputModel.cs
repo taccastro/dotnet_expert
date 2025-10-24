@@ -1,6 +1,6 @@
-using AwesomeShopPatterns.API.Core.Enums;
+﻿using Patterns.API.Core.Enums;
 
-namespace AwesomeShopPatterns.API.Application.Models
+namespace Patterns.API.Application.Models
 {
     public class OrderInputModel
     {
@@ -10,6 +10,16 @@ namespace AwesomeShopPatterns.API.Application.Models
         public PaymentAddressInputModel PaymentAddress { get; set; }
         public PaymentInfoInputModel PaymentInfo { get; set; }
         public bool? IsInternational { get; set; }
+
+        // ✅ Propriedade adicionada para resolver o erro
+        public decimal TotalAmount
+        {
+            get
+            {
+                // Se não tiver itens, retorna 0
+                return Items?.Sum(i => i.Quantity * i.Price) ?? 0;
+            }
+        }
     }
 
     public class CustomerInputModel

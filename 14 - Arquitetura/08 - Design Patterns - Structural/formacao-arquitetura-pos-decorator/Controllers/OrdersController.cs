@@ -1,60 +1,25 @@
-using AwesomeShopPatterns.API.Application.Models;
-using AwesomeShopPatterns.API.Infrastructure;
-using AwesomeShopPatterns.API.Infrastructure.Payments;
+using Patterns.API.Application.Models;
+using Patterns.API.Infrastructure.Payments;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AwesomeShopPatterns.API.Controllers
+namespace Patterns.API.Controllers
 {
     [ApiController]
     [Route("api/orders")]
     public class OrdersController : ControllerBase
     {
-        private readonly IPaymentServiceFactory _paymentServiceFactory;
-        public OrdersController(
-            IPaymentServiceFactory paymentServiceFactory)
+        private readonly IPaymentService _paymentService;
+
+        public OrdersController(IPaymentService paymentService)
         {
-            _paymentServiceFactory = paymentServiceFactory;
-        }
-
-        [HttpPost("simpler")]
-        public IActionResult SimplerPost(
-            [FromServices] IPaymentServiceFactory paymentServiceFactory,
-            OrderInputModel model
-            )
-        {
-
-            var paymentService = paymentServiceFactory.GetService(model.PaymentInfo.PaymentMethod);
-
-            // Precisamos adicionar novos comportamentos ao "paymentService.Process", mas não
-            // queremos alterar sua implementação
-            var paymentResult = paymentService.Process(model);
-
-            return NoContent();
+            _paymentService = paymentService;
         }
 
         [HttpPost]
-        public IActionResult Post(
-            [FromServices] InternationalOrderAbstractFactory internationalOrderAbstractFactory,
-            [FromServices] NationalOrderAbstractFactory nationalOrderAbstractFactory,
-            OrderInputModel model
-            )
+        public IActionResult Post(OrderInputModel model)
         {
-            IOrderAbstractFactory orderAbstractFactory;
-
-            if (model.IsInternational != null && model.IsInternational.Value)
-                orderAbstractFactory = internationalOrderAbstractFactory;
-            else
-                orderAbstractFactory = nationalOrderAbstractFactory;
-
-            var paymentResult = orderAbstractFactory
-                .GetPaymentService(model.PaymentInfo.PaymentMethod)
-                .Process(model);
-
-            orderAbstractFactory
-                .GetDeliveryService()
-                .Deliver(model);
-
-            return NoContent();
+            var result = _paymentService.Process(model);
+            return Ok(result);
         }
     }
 }

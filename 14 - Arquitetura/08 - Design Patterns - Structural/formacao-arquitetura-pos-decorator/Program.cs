@@ -1,20 +1,20 @@
-using AwesomeShopPatterns.API.Infrastructure.Payments;
+using Patterns.API.Infrastructure.Payments;
+using Patterns.API.Infrastructure.Payments.Decorators;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
-builder.Services.AddScoped<ExternalPaymentSlipService>();
-builder.Services.AddScoped<IExternalPaymentSlipService, ExternalPaymentSlipServiceDecorator>();
+builder.Services.AddScoped<IPaymentService>(sp =>
+{
+    var paymentSlipService = new PaymentSlipService();
+    return new PaymentServiceDecorator(paymentSlipService);
+});
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -22,9 +22,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();

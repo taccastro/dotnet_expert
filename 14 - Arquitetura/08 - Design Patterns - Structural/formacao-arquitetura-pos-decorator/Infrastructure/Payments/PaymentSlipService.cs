@@ -1,24 +1,18 @@
-using AwesomeShopPatterns.API.Application.Models;
-using AwesomeShopPatterns.API.Infrastructure.Payments.Adapters;
+using Patterns.API.Application.Models;
 
-namespace AwesomeShopPatterns.API.Infrastructure.Payments
+namespace Patterns.API.Infrastructure.Payments
 {
     public class PaymentSlipService : IPaymentService
     {
-        private readonly IExternalPaymentSlipService _externalService;
-
-        public PaymentSlipService(IExternalPaymentSlipService externalService)
-        {
-            _externalService = externalService;
-        }
-
         public object Process(OrderInputModel model)
         {
-            var adapter = new PaymentSlipServiceAdapter(_externalService);
-
-            var paymentSlipModel = adapter.GeneratePaymentSlip(model);
-
-            return "Dados do Boleto";
+            // Simulação de geração de boleto
+            return new
+            {
+                Tipo = "Boleto",
+                Valor = model?.TotalAmount ?? 0,
+                Mensagem = "Boleto gerado com sucesso."
+            };
         }
     }
 }

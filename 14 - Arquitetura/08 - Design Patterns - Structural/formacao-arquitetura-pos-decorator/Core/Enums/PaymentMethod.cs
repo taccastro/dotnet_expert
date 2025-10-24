@@ -1,4 +1,4 @@
-namespace AwesomeShopPatterns.API.Core.Enums
+namespace Patterns.API.Core.Enums
 {
     public enum PaymentMethod
     {
