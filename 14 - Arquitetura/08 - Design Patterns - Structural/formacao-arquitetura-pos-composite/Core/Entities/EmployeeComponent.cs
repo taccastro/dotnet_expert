@@ -1,4 +1,4 @@
-﻿namespace AwesomeShopPatterns.API.Core.Entities
+﻿namespace Patterns.API.Core.Entities
 {
     public abstract class EmployeeComponent
     {

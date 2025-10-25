@@ -1,28 +1,18 @@
-using AwesomeShopPatterns.API.Application;
-using AwesomeShopPatterns.API.Infrastructure;
-using AwesomeShopPatterns.API.Infrastructure.Proxies;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddMemoryCache();
-builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
-
-builder.Services.AddScoped<CustomerRepositoryProxy>();
-
-builder.Services.AddSingleton<PaymentMethodsFactory>();
-
+// Adiciona suporte a Controllers (para expor o Composite via API)
 builder.Services.AddControllers();
 
-builder.Services.AddHttpContextAccessor();
-
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+// Swagger (opcional, mas útil para testar o Composite pela API)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

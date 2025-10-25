@@ -1,7 +1,7 @@
-﻿using AwesomeShopPatterns.API.Core.Entities;
+﻿using Patterns.API.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AwesomeShopPatterns.API.Controllers
+namespace Patterns.API.Controllers
 {
     [ApiController]
     [Route("api/employees")]
