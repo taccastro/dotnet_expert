@@ -12,7 +12,7 @@ namespace HexagonalArchitecture.Application.UseCases.GetOrderById
             CustomerEmail = order.CustomerEmail;
             TotalCost = order.TotalCost;
             Items = order.Items.Select(i => $"Product {i.ProductName}, Quantity {i.Quantity}").ToList();
-            Status = (int) order.Status;
+            Status = (int)order.Status;
             CreatedAt = order.CreatedAt;
         }
 
