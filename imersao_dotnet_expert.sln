@@ -158,6 +158,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "behavioral", "behavioral", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API", "14 - Arquitetura\09 - Design Patterns - Behavioral\formacao-arquitetura-pos-parte2-patterns-comportamentais\AwesomeShopPatterns.API.csproj", "{AE8540F5-B1C2-6C8E-57D3-96FAF266F9C5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ARQUITETURAS DE SOFTWARE", "ARQUITETURAS DE SOFTWARE", "{ECFECD94-E8AF-423E-9444-CF97A5975CA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArquiteturaHexagonal", "ArquiteturaHexagonal", "{E2F21B8D-94F7-4D6A-A7B0-4F10AA30EA83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexagonalArchitecture.API", "14 - Arquitetura\10 - Arquiteturas de Software\Hexagonal\HexagonalArchitecture.API\HexagonalArchitecture.API.csproj", "{41C65340-2B3D-C82C-0490-0CBF613B4C37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexagonalArchitecture.Application", "14 - Arquitetura\10 - Arquiteturas de Software\Hexagonal\HexagonalArchitecture.Application\HexagonalArchitecture.Application.csproj", "{D4C6F154-6A89-975F-7CF4-9000627FAAA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexagonalArchitecture.Domain", "14 - Arquitetura\10 - Arquiteturas de Software\Hexagonal\HexagonalArchitecture.Domain\HexagonalArchitecture.Domain.csproj", "{5BE4FA89-D1BA-9092-455C-42093534941C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexagonalArchitecture.Infrastructure", "14 - Arquitetura\10 - Arquiteturas de Software\Hexagonal\HexagonalArchitecture.Infrastructure\HexagonalArchitecture.Infrastructure.csproj", "{990646F7-E598-FA8F-D7E7-2702312AC728}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -396,6 +408,22 @@ Global
 		{AE8540F5-B1C2-6C8E-57D3-96FAF266F9C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE8540F5-B1C2-6C8E-57D3-96FAF266F9C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE8540F5-B1C2-6C8E-57D3-96FAF266F9C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41C65340-2B3D-C82C-0490-0CBF613B4C37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41C65340-2B3D-C82C-0490-0CBF613B4C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41C65340-2B3D-C82C-0490-0CBF613B4C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41C65340-2B3D-C82C-0490-0CBF613B4C37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4C6F154-6A89-975F-7CF4-9000627FAAA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4C6F154-6A89-975F-7CF4-9000627FAAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4C6F154-6A89-975F-7CF4-9000627FAAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4C6F154-6A89-975F-7CF4-9000627FAAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BE4FA89-D1BA-9092-455C-42093534941C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BE4FA89-D1BA-9092-455C-42093534941C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BE4FA89-D1BA-9092-455C-42093534941C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BE4FA89-D1BA-9092-455C-42093534941C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{990646F7-E598-FA8F-D7E7-2702312AC728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{990646F7-E598-FA8F-D7E7-2702312AC728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{990646F7-E598-FA8F-D7E7-2702312AC728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{990646F7-E598-FA8F-D7E7-2702312AC728}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -474,6 +502,12 @@ Global
 		{F6BE2A21-9BC0-FB08-76D8-E81475DE8F0A} = {2731DB81-D1CC-4243-8AB8-E47785142DE5}
 		{8329DC11-99DE-4FBD-971F-90322984EB50} = {F3526533-69BE-4D10-BE50-D1DD23A93D2D}
 		{AE8540F5-B1C2-6C8E-57D3-96FAF266F9C5} = {8329DC11-99DE-4FBD-971F-90322984EB50}
+		{ECFECD94-E8AF-423E-9444-CF97A5975CA1} = {7934B5DE-E06A-45E6-ABA4-D3AB8A54E4D8}
+		{E2F21B8D-94F7-4D6A-A7B0-4F10AA30EA83} = {ECFECD94-E8AF-423E-9444-CF97A5975CA1}
+		{41C65340-2B3D-C82C-0490-0CBF613B4C37} = {E2F21B8D-94F7-4D6A-A7B0-4F10AA30EA83}
+		{D4C6F154-6A89-975F-7CF4-9000627FAAA4} = {E2F21B8D-94F7-4D6A-A7B0-4F10AA30EA83}
+		{5BE4FA89-D1BA-9092-455C-42093534941C} = {E2F21B8D-94F7-4D6A-A7B0-4F10AA30EA83}
+		{990646F7-E598-FA8F-D7E7-2702312AC728} = {E2F21B8D-94F7-4D6A-A7B0-4F10AA30EA83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BDDE12DE-2A16-4A45-B905-4DF0385FEF49}
