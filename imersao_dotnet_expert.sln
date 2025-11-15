@@ -170,6 +170,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexagonalArchitecture.Domai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexagonalArchitecture.Infrastructure", "14 - Arquitetura\10 - Arquiteturas de Software\Hexagonal\HexagonalArchitecture.Infrastructure\HexagonalArchitecture.Infrastructure.csproj", "{990646F7-E598-FA8F-D7E7-2702312AC728}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArquiteturaLimpa", "ArquiteturaLimpa", "{8194E1AC-8ADC-433D-89CA-61486DC7EFD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.API", "14 - Arquitetura\10 - Arquiteturas de Software\Limpa\CleanArchitecture.API\CleanArchitecture.API.csproj", "{CD4738CB-4F9A-2656-09E8-673734C7BD26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Application", "14 - Arquitetura\10 - Arquiteturas de Software\Limpa\CleanArchitecture.Application\CleanArchitecture.Application.csproj", "{73D3449A-3D01-0C64-A418-867308902D06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Core", "14 - Arquitetura\10 - Arquiteturas de Software\Limpa\CleanArchitecture.Core\CleanArchitecture.Core.csproj", "{E558D603-0935-0003-0AB0-2D78AAC1B291}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Infrastructure", "14 - Arquitetura\10 - Arquiteturas de Software\Limpa\CleanArchitecture.Infrastructure\CleanArchitecture.Infrastructure.csproj", "{29888535-BAD6-F4C4-E07A-7F2FF7927763}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -424,6 +434,22 @@ Global
 		{990646F7-E598-FA8F-D7E7-2702312AC728}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{990646F7-E598-FA8F-D7E7-2702312AC728}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{990646F7-E598-FA8F-D7E7-2702312AC728}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD4738CB-4F9A-2656-09E8-673734C7BD26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD4738CB-4F9A-2656-09E8-673734C7BD26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD4738CB-4F9A-2656-09E8-673734C7BD26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD4738CB-4F9A-2656-09E8-673734C7BD26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73D3449A-3D01-0C64-A418-867308902D06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73D3449A-3D01-0C64-A418-867308902D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73D3449A-3D01-0C64-A418-867308902D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73D3449A-3D01-0C64-A418-867308902D06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E558D603-0935-0003-0AB0-2D78AAC1B291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E558D603-0935-0003-0AB0-2D78AAC1B291}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E558D603-0935-0003-0AB0-2D78AAC1B291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E558D603-0935-0003-0AB0-2D78AAC1B291}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29888535-BAD6-F4C4-E07A-7F2FF7927763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29888535-BAD6-F4C4-E07A-7F2FF7927763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29888535-BAD6-F4C4-E07A-7F2FF7927763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29888535-BAD6-F4C4-E07A-7F2FF7927763}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -508,6 +534,11 @@ Global
 		{D4C6F154-6A89-975F-7CF4-9000627FAAA4} = {E2F21B8D-94F7-4D6A-A7B0-4F10AA30EA83}
 		{5BE4FA89-D1BA-9092-455C-42093534941C} = {E2F21B8D-94F7-4D6A-A7B0-4F10AA30EA83}
 		{990646F7-E598-FA8F-D7E7-2702312AC728} = {E2F21B8D-94F7-4D6A-A7B0-4F10AA30EA83}
+		{8194E1AC-8ADC-433D-89CA-61486DC7EFD3} = {ECFECD94-E8AF-423E-9444-CF97A5975CA1}
+		{CD4738CB-4F9A-2656-09E8-673734C7BD26} = {8194E1AC-8ADC-433D-89CA-61486DC7EFD3}
+		{73D3449A-3D01-0C64-A418-867308902D06} = {8194E1AC-8ADC-433D-89CA-61486DC7EFD3}
+		{E558D603-0935-0003-0AB0-2D78AAC1B291} = {8194E1AC-8ADC-433D-89CA-61486DC7EFD3}
+		{29888535-BAD6-F4C4-E07A-7F2FF7927763} = {8194E1AC-8ADC-433D-89CA-61486DC7EFD3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BDDE12DE-2A16-4A45-B905-4DF0385FEF49}
