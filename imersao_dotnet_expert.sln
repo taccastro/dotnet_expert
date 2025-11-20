@@ -112,13 +112,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3_MICROSERVICOS", "3_MICROS
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4_ARQUITETURA", "4_ARQUITETURA", "{7934B5DE-E06A-45E6-ABA4-D3AB8A54E4D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShop.Services.Customers.Api", "13- Microserviços\AwesomeShop.Services.Customers-master\src\AwesomeShop.Services.Customers.Api\AwesomeShop.Services.Customers.Api.csproj", "{7A5825B3-0C86-2B1F-B61D-28CAB2B70078}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Customers.Api", "13- Microserviços\AwesomeShop.Services.Customers-master\src\Services.Customers.Api\Services.Customers.Api.csproj", "{7A5825B3-0C86-2B1F-B61D-28CAB2B70078}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShop.Services.Customers.Application", "13- Microserviços\AwesomeShop.Services.Customers-master\src\AwesomeShop.Services.Customers.Application\AwesomeShop.Services.Customers.Application.csproj", "{7D361123-9D53-4549-9759-7F3737D78AC1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Customers.Application", "13- Microserviços\AwesomeShop.Services.Customers-master\src\Services.Customers.Application\Services.Customers.Application.csproj", "{7D361123-9D53-4549-9759-7F3737D78AC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShop.Services.Customers.Core", "13- Microserviços\AwesomeShop.Services.Customers-master\src\AwesomeShop.Services.Customers.Core\AwesomeShop.Services.Customers.Core.csproj", "{60513D6E-238D-21AB-90D0-82D347F05F9C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Customers.Core", "13- Microserviços\AwesomeShop.Services.Customers-master\src\Services.Customers.Core\Services.Customers.Core.csproj", "{60513D6E-238D-21AB-90D0-82D347F05F9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShop.Services.Customers.Infrastructure", "13- Microserviços\AwesomeShop.Services.Customers-master\src\AwesomeShop.Services.Customers.Infrastructure\AwesomeShop.Services.Customers.Infrastructure.csproj", "{DF48E4DA-7C60-467B-68F5-C0C19F39C7B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Customers.Infrastructure", "13- Microserviços\AwesomeShop.Services.Customers-master\src\Services.Customers.Infrastructure\Services.Customers.Infrastructure.csproj", "{DF48E4DA-7C60-467B-68F5-C0C19F39C7B3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciples", "14 - Arquitetura\05 - Princípios SOLID\SolidPrinciples.csproj", "{4B7A1672-AF29-FDBF-465A-A48F3B147AB8}"
 EndProject
