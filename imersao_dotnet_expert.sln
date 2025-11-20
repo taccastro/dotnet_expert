@@ -180,6 +180,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Core", "1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Infrastructure", "14 - Arquitetura\10 - Arquiteturas de Software\Limpa\CleanArchitecture.Infrastructure\CleanArchitecture.Infrastructure.csproj", "{29888535-BAD6-F4C4-E07A-7F2FF7927763}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{2D52ACC6-54B9-49E8-992D-C1F54DB24C0B}"
+	ProjectSection(SolutionItems) = preProject
+		README.md.md = README.md.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
