@@ -65,6 +65,9 @@ Implementações de padrões como:
 Localizado em `14 - Arquitetura/10 - Arquiteturas de Software`
 - **Clean Architecture**: Foco no domínio e inversão de dependência.
 - **Hexagonal Architecture (Ports & Adapters)**: Isolamento da aplicação via portas e adaptadores.
+- **Event Driven Architecture (Arquitetura Orientada a Eventos)**: Comunicação assíncrona entre serviços via mensageria (RabbitMQ).
+  - `EventDrivenArchitecture.Orders`: Serviço produtor de eventos de pedidos.
+  - `EventDrivenArchitecture.Warehouse`: Serviço consumidor que reage a eventos de pedidos.
 
 ---
 
