@@ -2,8 +2,8 @@
 
 namespace EventDrivenArchitecture.Warehouse.Integrations
 {
-    public interface IShippingService
+    public interface IServicoEnvio
     {
-        void ShipOrder(OrderCreatedEvent @event);
+        void EnviarPedido(EventoPedidoCriado @event);
     }
 }

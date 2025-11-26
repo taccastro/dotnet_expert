@@ -2,11 +2,12 @@
 
 namespace EventDrivenArchitecture.Orders.Repositories
 {
-    public class OrderRepository : IOrderRepository
+    public class RepositorioPedido : IOrderRepository
     {
         public void UpdateOrderStatus(int id, OrderStatus status)
         {
-            // Order Status Updated
+            // Status do Pedido Atualizado
+            Console.WriteLine($"Status do pedido {id} atualizado para {status}");
         }
     }
 }

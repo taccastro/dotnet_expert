@@ -6,9 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddScoped<IMessageBusService, RabbitMqService>();
-builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+builder.Services.AddScoped<IOrderRepository, RepositorioPedido>();
 
-builder.Services.AddHostedService<OrderShippedSubscriber>();
+builder.Services.AddHostedService<SubscritorPedidoEnviado>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -6,24 +6,24 @@ using Microsoft.AspNetCore.Mvc;
 namespace EventDrivenArchitecture.Orders.Controllers
 {
     [ApiController]
-    [Route("api/orders")]
-    public class OrdersController : ControllerBase
+    [Route("api/pedidos")]
+    public class PedidosController : ControllerBase
     {
         private readonly IMessageBusService _busService;
 
-        public OrdersController(IMessageBusService busService)
+        public PedidosController(IMessageBusService busService)
         {
             _busService = busService;
         }
 
         [HttpPost]
-        public IActionResult Post(AddOrderInputModel model)
+        public IActionResult Post(ModeloEntradaPedido modelo)
         {
             var id = new Random().Next(1, 10000); // Poderia ser chamada de um Repositório, por exemplo.
 
-            var @event = new OrderCreatedEvent(id, model);
+            var evento = new EventoPedidoCriado(id, modelo);
 
-            _busService.Publish(@event, "order-created");
+            _busService.Publish(evento, "pedido-criado");
 
             return Accepted();
         }

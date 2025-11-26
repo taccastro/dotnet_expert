@@ -8,37 +8,37 @@ using System.Text;
 
 namespace EventDrivenArchitecture.Orders.Subscribers
 {
-    public class OrderShippedSubscriber : BackgroundService
+    public class SubscritorPedidoEnviado : BackgroundService
     {
         private readonly IConnection _connection;
         private readonly IModel _channel;
-        private const string Queue = "orders-service/order-created";
-        private const string RoutingKeySubscribe = "order-shipped";
+        private const string Fila = "servico-pedidos/pedido-criado"; // Mantendo a lógica original, mas traduzindo
+        private const string RoutingKeyInscricao = "pedido-enviado";
         private readonly IServiceProvider _serviceProvider;
-        private const string Exchange = "orders-service";
-        private const string WarehouseExchange = "warehouse-service";
-        public OrderShippedSubscriber(IServiceProvider serviceProvider)
+        private const string Exchange = "servico-pedidos";
+        private const string ExchangeArmazem = "servico-armazem";
+        public SubscritorPedidoEnviado(IServiceProvider serviceProvider)
         {
             var connectionFactory = new ConnectionFactory
             {
                 HostName = "localhost"
             };
 
-            _connection = connectionFactory.CreateConnection("orders-service-order-shipped-consumer");
+            _connection = connectionFactory.CreateConnection("servico-pedidos-consumidor-pedido-enviado");
 
             _channel = _connection.CreateModel();
 
             _channel.ExchangeDeclare(Exchange, "direct", false, true, null);
-            _channel.ExchangeDeclare(WarehouseExchange, "direct", false, true, null);
+            _channel.ExchangeDeclare(ExchangeArmazem, "direct", false, true, null);
 
             _channel.QueueDeclare(
-                queue: Queue,
+                queue: Fila,
                 durable: false,
                 exclusive: false,
                 autoDelete: true,
                 null);
 
-            _channel.QueueBind(Queue, WarehouseExchange, RoutingKeySubscribe);
+            _channel.QueueBind(Fila, ExchangeArmazem, RoutingKeyInscricao);
 
             _serviceProvider = serviceProvider;
         }
@@ -51,28 +51,34 @@ namespace EventDrivenArchitecture.Orders.Subscribers
             {
                 var contentArray = eventArgs.Body.ToArray();
                 var contentString = Encoding.UTF8.GetString(contentArray);
-                var orderShippedEvent = JsonConvert.DeserializeObject<OrderShippedEvent>(contentString);
+                var eventoPedidoEnviado = JsonConvert.DeserializeObject<EventoPedidoEnviado>(contentString);
 
-                Console.WriteLine($"Message OrderShippedEvent received with Id {orderShippedEvent.Id}");
+                Console.WriteLine($"Mensagem EventoPedidoEnviado recebida com Id {eventoPedidoEnviado.Id}");
 
-                UpdateOrderStatus(orderShippedEvent);
+                AtualizarStatusPedido(eventoPedidoEnviado);
 
                 _channel.BasicAck(eventArgs.DeliveryTag, false);
             };
 
-            _channel.BasicConsume(Queue, false, consumer);
+            _channel.BasicConsume(Fila, false, consumer);
 
             return Task.CompletedTask;
         }
 
-        public void UpdateOrderStatus(OrderShippedEvent @event)
+        public void AtualizarStatusPedido(EventoPedidoEnviado @event)
         {
             using (var scope = _serviceProvider.CreateScope())
             {
-                var repository = scope.ServiceProvider.GetService<IOrderRepository>();
+                var repositorio = scope.ServiceProvider.GetService<IOrderRepository>();
 
-                repository.UpdateOrderStatus(@event.Id, OrderStatus.Shipped);
+                repositorio.UpdateOrderStatus(@event.Id, OrderStatus.Shipped);
             }
         }
+    }
+    
+    // Classe DTO simples para o evento, já que não temos acesso ao projeto Warehouse aqui diretamente sem referência circular ou duplicação
+    public class EventoPedidoEnviado
+    {
+        public int Id { get; set; }
     }
 }

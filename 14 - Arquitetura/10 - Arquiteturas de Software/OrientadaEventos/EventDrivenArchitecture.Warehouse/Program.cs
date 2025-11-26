@@ -4,9 +4,9 @@ using EventDrivenArchitecture.Warehouse.Subscribers;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddScoped<IShippingService, ShippingService>();
+builder.Services.AddScoped<IServicoEnvio, ServicoEnvio>();
 
-builder.Services.AddHostedService<OrderCreatedSubscriber>();
+builder.Services.AddHostedService<SubscritorPedidoCriado>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

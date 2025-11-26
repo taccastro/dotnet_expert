@@ -8,7 +8,7 @@ namespace EventDrivenArchitecture.Orders.MessageBus
     {
         private readonly IConnection _connection;
         private readonly IModel _channel;
-        private const string Exchange = "orders-service";
+        private const string Exchange = "servico-pedidos";
         public RabbitMqService()
         {
             var connectionFactory = new ConnectionFactory
@@ -16,7 +16,7 @@ namespace EventDrivenArchitecture.Orders.MessageBus
                 HostName = "localhost"
             };
 
-            _connection = connectionFactory.CreateConnection("orders-service-publisher");
+            _connection = connectionFactory.CreateConnection("servico-pedidos-publicador");
 
             _channel = _connection.CreateModel();
         }
@@ -28,7 +28,7 @@ namespace EventDrivenArchitecture.Orders.MessageBus
             var payload = JsonConvert.SerializeObject(data);
             var byteArray = Encoding.UTF8.GetBytes(payload);
 
-            Console.WriteLine($"{type.Name} Published");
+            Console.WriteLine($"{type.Name} Publicado");
 
             _channel.BasicPublish(Exchange, routingKey, null, byteArray);
         }
