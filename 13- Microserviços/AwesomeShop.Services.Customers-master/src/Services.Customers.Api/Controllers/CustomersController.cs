@@ -1,7 +1,7 @@
-using Services.Customers.Application.Commands;
-using Services.Customers.Application.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Services.Customers.Application.Commands;
+using Services.Customers.Application.Queries;
 using System;
 using System.Threading.Tasks;
 

@@ -1,13 +1,13 @@
-using Services.Customers.Core.Entities;
-using Services.Customers.Core.Repositories;
-using Services.Customers.Infrastructure.MessageBus;
-using Services.Customers.Infrastructure.Persistence;
-using Services.Customers.Infrastructure.Persistence.Repositories;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using RabbitMQ.Client;
+using Services.Customers.Core.Entities;
+using Services.Customers.Core.Repositories;
+using Services.Customers.Infrastructure.MessageBus;
+using Services.Customers.Infrastructure.Persistence;
+using Services.Customers.Infrastructure.Persistence.Repositories;
 
 namespace Services.Customers.Infrastructure
 {

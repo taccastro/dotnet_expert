@@ -1,5 +1,5 @@
-using Services.Customers.Core.ValueObjects;
 using MediatR;
+using Services.Customers.Core.ValueObjects;
 using System;
 
 namespace Services.Customers.Application.Commands

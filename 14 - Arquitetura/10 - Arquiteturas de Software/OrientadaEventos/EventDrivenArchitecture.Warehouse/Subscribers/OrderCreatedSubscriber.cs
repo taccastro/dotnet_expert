@@ -1,9 +1,9 @@
-﻿using RabbitMQ.Client.Events;
-using RabbitMQ.Client;
-using EventDrivenArchitecture.Warehouse.Events;
-using System.Text;
-using Newtonsoft.Json;
+﻿using EventDrivenArchitecture.Warehouse.Events;
 using EventDrivenArchitecture.Warehouse.Integrations;
+using Newtonsoft.Json;
+using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
+using System.Text;
 
 namespace EventDrivenArchitecture.Warehouse.Subscribers
 {

@@ -1,10 +1,10 @@
-﻿using RabbitMQ.Client.Events;
-using RabbitMQ.Client;
-using System.Text;
-using Newtonsoft.Json;
+﻿using EventDrivenArchitecture.Orders.Enums;
 using EventDrivenArchitecture.Orders.Events;
 using EventDrivenArchitecture.Orders.Repositories;
-using EventDrivenArchitecture.Orders.Enums;
+using Newtonsoft.Json;
+using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
+using System.Text;
 
 namespace EventDrivenArchitecture.Orders.Subscribers
 {

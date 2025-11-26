@@ -1,7 +1,7 @@
+using MediatR;
 using Services.Customers.Application.Commands;
 using Services.Customers.Application.View_Models;
 using Services.Customers.Core.Repositories;
-using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
 

@@ -1,5 +1,5 @@
-using Services.Customers.Application.Subscribers;
 using Microsoft.Extensions.DependencyInjection;
+using Services.Customers.Application.Subscribers;
 
 namespace Services.Customers.Application
 {

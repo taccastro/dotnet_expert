@@ -1,6 +1,3 @@
-using Services.Customers.Application;
-using Services.Customers.Application.Commands;
-using Services.Customers.Infrastructure;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -8,6 +5,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Services.Customers.Application;
+using Services.Customers.Application.Commands;
+using Services.Customers.Infrastructure;
 
 namespace Services.Customers.Api
 {

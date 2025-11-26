@@ -14,7 +14,7 @@ namespace CleanArchitecture.API.Controllers
         {
             _service = service;
         }
-       
+
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {

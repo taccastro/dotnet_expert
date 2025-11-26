@@ -1,6 +1,5 @@
 ﻿using CleanArchitecture.Application.InputModels;
 using CleanArchitecture.Application.ViewModels;
-using CleanArchitecture.Core.DomainServices;
 using CleanArchitecture.Core.Repositories;
 
 namespace CleanArchitecture.Application.Services
@@ -17,7 +16,7 @@ namespace CleanArchitecture.Application.Services
         public async Task<ResultBase<int>> Add(AddOrderInputModel input)
         {
             var order = input.ToEntity();
-            
+
             var id = await _repository.Add(order);
 
             return new ResultBase<int>(id);

@@ -1,9 +1,4 @@
 ﻿using CleanArchitecture.Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CleanArchitecture.Application.ViewModels
 {
@@ -17,7 +12,7 @@ namespace CleanArchitecture.Application.ViewModels
             CustomerEmail = order.CustomerEmail;
             TotalCost = order.TotalCost;
             Items = order.Items.Select(i => $"Product {i.ProductName}, Quantity {i.Quantity}").ToList();
-            Status = (int) order.Status;
+            Status = (int)order.Status;
             CreatedAt = order.CreatedAt;
         }
 

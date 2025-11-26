@@ -1,5 +1,5 @@
-﻿using Patterns.API.Core.Entities;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Patterns.API.Core.Entities;
 
 namespace Patterns.API.Controllers
 {

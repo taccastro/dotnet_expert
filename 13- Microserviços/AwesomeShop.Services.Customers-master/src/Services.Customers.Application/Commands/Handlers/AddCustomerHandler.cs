@@ -1,7 +1,7 @@
+using MediatR;
 using Services.Customers.Core.Entities;
 using Services.Customers.Core.Repositories;
 using Services.Customers.Infrastructure.MessageBus;
-using MediatR;
 using System;
 using System.Threading;
 using System.Threading.Tasks;

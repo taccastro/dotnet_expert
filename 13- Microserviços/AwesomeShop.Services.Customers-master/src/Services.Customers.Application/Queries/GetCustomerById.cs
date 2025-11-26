@@ -1,5 +1,5 @@
-using Services.Customers.Application.View_Models;
 using MediatR;
+using Services.Customers.Application.View_Models;
 using System;
 
 namespace Services.Customers.Application.Queries

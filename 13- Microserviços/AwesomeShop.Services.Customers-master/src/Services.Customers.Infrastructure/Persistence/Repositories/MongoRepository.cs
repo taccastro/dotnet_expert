@@ -1,5 +1,5 @@
-using Services.Customers.Core.Entities;
 using MongoDB.Driver;
+using Services.Customers.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;

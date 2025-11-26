@@ -1,5 +1,5 @@
-using Services.Customers.Core.Repositories;
 using MediatR;
+using Services.Customers.Core.Repositories;
 using System.Threading;
 using System.Threading.Tasks;
 

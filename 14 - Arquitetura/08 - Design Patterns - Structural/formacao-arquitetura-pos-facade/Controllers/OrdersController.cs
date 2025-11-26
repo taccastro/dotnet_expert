@@ -1,6 +1,6 @@
+using Microsoft.AspNetCore.Mvc;
 using Patterns.API.Application.Models;
 using Patterns.API.Infrastructure.Integrations;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Patterns.API.Controllers
 {

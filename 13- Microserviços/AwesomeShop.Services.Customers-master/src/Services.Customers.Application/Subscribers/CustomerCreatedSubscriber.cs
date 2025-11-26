@@ -1,9 +1,9 @@
-using Services.Customers.Infrastructure.MessageBus;
-using Services.Customers.Infrastructure.MessageBus.IntegrationEvents;
 using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
+using Services.Customers.Infrastructure.MessageBus;
+using Services.Customers.Infrastructure.MessageBus.IntegrationEvents;
 using System;
 using System.Text;
 using System.Threading;

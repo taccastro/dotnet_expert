@@ -11,7 +11,8 @@ namespace CleanArchitecture.Core.Entities
 
         public List<IEvent> Events { get; private set; }
 
-        public void AddEvent(IEvent @event) {
+        public void AddEvent(IEvent @event)
+        {
             Events.Add(@event);
         }
     }
