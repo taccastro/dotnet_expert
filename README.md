@@ -68,6 +68,8 @@ Localizado em `14 - Arquitetura/10 - Arquiteturas de Software`
 - **Event Driven Architecture (Arquitetura Orientada a Eventos)**: Comunicação assíncrona entre serviços via mensageria (RabbitMQ).
   - `EventDrivenArchitecture.Orders`: Serviço produtor de eventos de pedidos.
   - `EventDrivenArchitecture.Warehouse`: Serviço consumidor que reage a eventos de pedidos.
+- **Serverless Architecture**: Aplicação de referência utilizando Azure Functions.
+  - `EcommerceServerless.App`: Processamento de pedidos com HttpTrigger, ServiceBusTrigger e CosmosDBTrigger (`14 - Arquitetura/10 - Arquiteturas de Software/Serverless`).
 
 ---
 
@@ -77,6 +79,8 @@ Localizado em `14 - Arquitetura/10 - Arquiteturas de Software`
 - **DevFreela (Versão Microservices)**: Implementação distribuída do projeto principal (`12 - Microsserviços e Mensageria`).
 
 ---
+
+
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -90,3 +94,4 @@ Localizado em `14 - Arquitetura/10 - Arquiteturas de Software`
 - **SQL Server**
 - **RabbitMQ** (Mensageria)
 - **Docker**
+- **Azure Functions**

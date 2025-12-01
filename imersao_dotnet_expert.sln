@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36705.20 d17.14
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11222.16 d18.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - APIs com ASP.NET Core", "03 - APIs com ASP.NET Core", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -193,6 +193,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventDrivenArchitecture.Orders", "14 - Arquitetura\10 - Arquiteturas de Software\OrientadaEventos\EventDrivenArchitecture.Orders\EventDrivenArchitecture.Orders.csproj", "{A2481FDA-3776-4C56-C0CA-83FE94EEEB1E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventDrivenArchitecture.Warehouse", "14 - Arquitetura\10 - Arquiteturas de Software\OrientadaEventos\EventDrivenArchitecture.Warehouse\EventDrivenArchitecture.Warehouse.csproj", "{F13172CE-D175-47DB-CA42-6811F121E429}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArquiteturaServerless", "ArquiteturaServerless", "{A1F45DDF-E0C2-4B3A-9E14-CED0CBA65F83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcommerceServerless.App", "14 - Arquitetura\10 - Arquiteturas de Software\Serverless\EcommerceServerless.App\EcommerceServerless.App.csproj", "{A8364E11-E805-D3DC-3FB7-DF4ED87D9FBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -472,6 +476,10 @@ Global
 		{F13172CE-D175-47DB-CA42-6811F121E429}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F13172CE-D175-47DB-CA42-6811F121E429}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F13172CE-D175-47DB-CA42-6811F121E429}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8364E11-E805-D3DC-3FB7-DF4ED87D9FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8364E11-E805-D3DC-3FB7-DF4ED87D9FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8364E11-E805-D3DC-3FB7-DF4ED87D9FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8364E11-E805-D3DC-3FB7-DF4ED87D9FBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -564,6 +572,8 @@ Global
 		{84A4E7AD-9B5E-4E91-9E74-4F207B7C0614} = {ECFECD94-E8AF-423E-9444-CF97A5975CA1}
 		{A2481FDA-3776-4C56-C0CA-83FE94EEEB1E} = {84A4E7AD-9B5E-4E91-9E74-4F207B7C0614}
 		{F13172CE-D175-47DB-CA42-6811F121E429} = {84A4E7AD-9B5E-4E91-9E74-4F207B7C0614}
+		{A1F45DDF-E0C2-4B3A-9E14-CED0CBA65F83} = {ECFECD94-E8AF-423E-9444-CF97A5975CA1}
+		{A8364E11-E805-D3DC-3FB7-DF4ED87D9FBA} = {A1F45DDF-E0C2-4B3A-9E14-CED0CBA65F83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BDDE12DE-2A16-4A45-B905-4DF0385FEF49}
