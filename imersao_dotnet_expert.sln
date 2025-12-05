@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.3.11222.16 d18.3
+VisualStudioVersion = 18.3.11222.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - APIs com ASP.NET Core", "03 - APIs com ASP.NET Core", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -197,6 +197,16 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArquiteturaServerless", "ArquiteturaServerless", "{A1F45DDF-E0C2-4B3A-9E14-CED0CBA65F83}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcommerceServerless.App", "14 - Arquitetura\10 - Arquiteturas de Software\Serverless\EcommerceServerless.App\EcommerceServerless.App.csproj", "{A8364E11-E805-D3DC-3FB7-DF4ED87D9FBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PadroesArquiteturais", "PadroesArquiteturais", "{2C62C366-0C08-4DF9-AEF3-8B24651C9ECE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitecturalPatterns.AwesomeShop.API", "14 - Arquitetura\10 - Arquiteturas de Software\PadroesArquiteturais\ArchitecturalPatterns.AwesomeShop.API\ArchitecturalPatterns.AwesomeShop.API.csproj", "{C86681B3-A089-AA05-855C-581ADD081FA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitecturalPatterns.AwesomeShop.Application", "14 - Arquitetura\10 - Arquiteturas de Software\PadroesArquiteturais\ArchitecturalPatterns.AwesomeShop.Application\ArchitecturalPatterns.AwesomeShop.Application.csproj", "{96A0B7C6-852D-7B26-4A68-571BF1D455E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitecturalPatterns.AwesomeShop.Core", "14 - Arquitetura\10 - Arquiteturas de Software\PadroesArquiteturais\ArchitecturalPatterns.AwesomeShop.Core\ArchitecturalPatterns.AwesomeShop.Core.csproj", "{7845F7B4-101A-8BFE-30DB-E9515F3DCC12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitecturalPatterns.AwesomeShop.Infrastructure", "14 - Arquitetura\10 - Arquiteturas de Software\PadroesArquiteturais\ArchitecturalPatterns.AwesomeShop.Infrastructure\ArchitecturalPatterns.AwesomeShop.Infrastructure.csproj", "{44BE2C46-FEA9-B0BE-CC2B-051A28878127}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -480,6 +490,22 @@ Global
 		{A8364E11-E805-D3DC-3FB7-DF4ED87D9FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8364E11-E805-D3DC-3FB7-DF4ED87D9FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8364E11-E805-D3DC-3FB7-DF4ED87D9FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C86681B3-A089-AA05-855C-581ADD081FA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C86681B3-A089-AA05-855C-581ADD081FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C86681B3-A089-AA05-855C-581ADD081FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C86681B3-A089-AA05-855C-581ADD081FA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96A0B7C6-852D-7B26-4A68-571BF1D455E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96A0B7C6-852D-7B26-4A68-571BF1D455E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96A0B7C6-852D-7B26-4A68-571BF1D455E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96A0B7C6-852D-7B26-4A68-571BF1D455E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7845F7B4-101A-8BFE-30DB-E9515F3DCC12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7845F7B4-101A-8BFE-30DB-E9515F3DCC12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7845F7B4-101A-8BFE-30DB-E9515F3DCC12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7845F7B4-101A-8BFE-30DB-E9515F3DCC12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44BE2C46-FEA9-B0BE-CC2B-051A28878127}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44BE2C46-FEA9-B0BE-CC2B-051A28878127}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44BE2C46-FEA9-B0BE-CC2B-051A28878127}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44BE2C46-FEA9-B0BE-CC2B-051A28878127}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -574,6 +600,11 @@ Global
 		{F13172CE-D175-47DB-CA42-6811F121E429} = {84A4E7AD-9B5E-4E91-9E74-4F207B7C0614}
 		{A1F45DDF-E0C2-4B3A-9E14-CED0CBA65F83} = {ECFECD94-E8AF-423E-9444-CF97A5975CA1}
 		{A8364E11-E805-D3DC-3FB7-DF4ED87D9FBA} = {A1F45DDF-E0C2-4B3A-9E14-CED0CBA65F83}
+		{2C62C366-0C08-4DF9-AEF3-8B24651C9ECE} = {ECFECD94-E8AF-423E-9444-CF97A5975CA1}
+		{C86681B3-A089-AA05-855C-581ADD081FA1} = {2C62C366-0C08-4DF9-AEF3-8B24651C9ECE}
+		{96A0B7C6-852D-7B26-4A68-571BF1D455E3} = {2C62C366-0C08-4DF9-AEF3-8B24651C9ECE}
+		{7845F7B4-101A-8BFE-30DB-E9515F3DCC12} = {2C62C366-0C08-4DF9-AEF3-8B24651C9ECE}
+		{44BE2C46-FEA9-B0BE-CC2B-051A28878127} = {2C62C366-0C08-4DF9-AEF3-8B24651C9ECE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BDDE12DE-2A16-4A45-B905-4DF0385FEF49}

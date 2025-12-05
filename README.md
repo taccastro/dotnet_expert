@@ -70,6 +70,8 @@ Localizado em `14 - Arquitetura/10 - Arquiteturas de Software`
   - `EventDrivenArchitecture.Warehouse`: Serviço consumidor que reage a eventos de pedidos.
 - **Serverless Architecture**: Aplicação de referência utilizando Azure Functions.
   - `EcommerceServerless.App`: Processamento de pedidos com HttpTrigger, ServiceBusTrigger e CosmosDBTrigger (`14 - Arquitetura/10 - Arquiteturas de Software/Serverless`).
+- **Padrões Arquiteturais Integrados**: Demonstração prática da combinação de Clean Architecture, CQRS, DDD e Repository Pattern.
+  - `ArchitecturalPatterns.AwesomeShop`: Solução completa localizada em `14 - Arquitetura/10 - Arquiteturas de Software/PadroesArquiteturais`.
 
 ---
 
