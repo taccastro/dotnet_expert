@@ -9,7 +9,7 @@ Acompanhe a evolução da API `DevFreela` através dos diferentes estágios de d
 - **03 - Desenvolvimento de APIs com ASP.NET Core**: Estrutura básica da API.
 - **04 - Arquitetura Limpa**: Refatoração para Clean Architecture.
 - **05 - Persistência com Entity Framework Core**: Implementação de banco de dados SQL Server.
-- **06 - CQRS**: Segregação de responsabilidades com Commands e Queries.
+- **06 - Command Query Responsibility Segregation (CQRS)**: Segregação de responsabilidades com Commands e Queries.
 - **07 - Padrão Repository**: Abstração da camada de acesso a dados.
 - **08 - Validação de APIs**: Implementação de FluentValidation.
 - **09 - Autenticação e Autorização com JWT**: Segurança da API.
@@ -50,7 +50,7 @@ Localizado em `14 - Arquitetura/08 - Design Patterns - Structural`
 - **Proxy**: Substituto ou placeholder para outro objeto.
 
 ### 🧠 Design Patterns - Comportamentais (Behavioral)
-Localizado em `14 - Arquitetura/09 - Design Patterns - Behavioral`
+Localizado em `14 - Arquitetura/09 - Design Patterns - Behavioral/formacao-arquitetura-pos-parte2-patterns-comportamentais`
 Projeto: `AwesomeShopPatterns.API`
 Implementações de padrões como:
 - **Strategy**
@@ -63,15 +63,15 @@ Implementações de padrões como:
 
 ### 🏛️ Estilos Arquiteturais
 Localizado em `14 - Arquitetura/10 - Arquiteturas de Software`
-- **Clean Architecture**: Foco no domínio e inversão de dependência.
-- **Hexagonal Architecture (Ports & Adapters)**: Isolamento da aplicação via portas e adaptadores.
-- **Event Driven Architecture (Arquitetura Orientada a Eventos)**: Comunicação assíncrona entre serviços via mensageria (RabbitMQ).
+- **Clean Architecture**: Foco no domínio e inversão de dependência (`/Limpa`).
+- **Hexagonal Architecture (Ports & Adapters)**: Isolamento da aplicação via portas e adaptadores (`/Hexagonal`).
+- **Event Driven Architecture (Arquitetura Orientada a Eventos)**: Comunicação assíncrona entre serviços via mensageria (RabbitMQ) (`/OrientadaEventos`).
   - `EventDrivenArchitecture.Orders`: Serviço produtor de eventos de pedidos.
   - `EventDrivenArchitecture.Warehouse`: Serviço consumidor que reage a eventos de pedidos.
-- **Serverless Architecture**: Aplicação de referência utilizando Azure Functions.
-  - `EcommerceServerless.App`: Processamento de pedidos com HttpTrigger, ServiceBusTrigger e CosmosDBTrigger (`14 - Arquitetura/10 - Arquiteturas de Software/Serverless`).
-- **Padrões Arquiteturais Integrados**: Demonstração prática da combinação de Clean Architecture, CQRS, DDD e Repository Pattern.
-  - `ArchitecturalPatterns.AwesomeShop`: Solução completa localizada em `14 - Arquitetura/10 - Arquiteturas de Software/PadroesArquiteturais`.
+- **Serverless Architecture**: Aplicação de referência utilizando Azure Functions (`/Serverless`).
+  - `EcommerceServerless.App`: Processamento de pedidos com HttpTrigger, ServiceBusTrigger e CosmosDBTrigger.
+- **Padrões Arquiteturais Integrados**: Demonstração prática da combinação de Clean Architecture, CQRS, DDD e Repository Pattern (`/PadroesArquiteturais`).
+  - `ArchitecturalPatterns.AwesomeShop`: Solução completa.
 
 ---
 
@@ -79,6 +79,37 @@ Localizado em `14 - Arquitetura/10 - Arquiteturas de Software`
 
 - **AwesomeShop.Services.Customers**: Exemplo de microsserviço focado em gestão de clientes (`13- Microserviços`).
 - **DevFreela (Versão Microservices)**: Implementação distribuída do projeto principal (`12 - Microsserviços e Mensageria`).
+
+---
+
+## 🚀 Como Executar
+
+### Pré-requisitos
+- **.NET SDK** (Versão 5.0 ou superior, verificar requisito de cada projeto)
+- **Visual Studio 2022** ou **VS Code**
+- **SQL Server** (Local ou em Container Docker)
+- **Docker & Docker Compose** (Essencial para projetos com mensageria e microsserviços)
+
+### Passos Gerais
+1. Clone o repositório.
+2. Navegue até a pasta do módulo ou projeto desejado.
+3. Restaure as dependências:
+   ```bash
+   dotnet restore
+   ```
+4. Verifique o arquivo `appsettings.json` para configurar a **Connection String** do banco de dados, se necessário.
+5. Execute a aplicação:
+   ```bash
+   dotnet run
+   ```
+
+### Executando Projetos com Docker (Ex: Event Driven)
+Para arquiteturas que dependem de infraestrutura externa (RabbitMQ, SQL Server), utilize o Docker Compose quando disponível (ex: na pasta `OrientadaEventos`):
+
+```bash
+cd "14 - Arquitetura/10 - Arquiteturas de Software/OrientadaEventos"
+docker-compose up -d
+```
 
 ---
 
