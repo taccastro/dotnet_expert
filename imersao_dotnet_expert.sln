@@ -130,33 +130,33 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "creational", "creational", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "structural", "structural", "{2731DB81-D1CC-4243-8AB8-E47785142DE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API -adpater", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-adapter\Patterns.API -adpater.csproj", "{D2254C69-1E18-8302-B7F2-0B5740F5630E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API -adpater", "14 - Arquitetura\08 - Design Patterns - Structural\Adapter\Patterns.API -adpater.csproj", "{D2254C69-1E18-8302-B7F2-0B5740F5630E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - decorator", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-decorator\Patterns.API - decorator.csproj", "{14566E2C-4203-54AE-55CE-2DDD442DC322}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - decorator", "14 - Arquitetura\08 - Design Patterns - Structural\Decorator\Patterns.API - decorator.csproj", "{14566E2C-4203-54AE-55CE-2DDD442DC322}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - facade", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-facade\Patterns.API - facade.csproj", "{16D77239-546E-B307-FA90-A78C1752A388}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - facade", "14 - Arquitetura\08 - Design Patterns - Structural\Facade\Patterns.API - facade.csproj", "{16D77239-546E-B307-FA90-A78C1752A388}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - Abstract Factory", "14 - Arquitetura\07 - Design Patterns - Creational\formacao-arquitetura-pos-abstract-factory\Patterns.API - Abstract Factory.csproj", "{16D9672E-D60D-744F-F479-1808B3E279C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - Abstract Factory", "14 - Arquitetura\07 - Design Patterns - Creational\AbstractFactory\Patterns.API - Abstract Factory.csproj", "{16D9672E-D60D-744F-F479-1808B3E279C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - Builder", "14 - Arquitetura\07 - Design Patterns - Creational\formacao-arquitetura-pos-builder\Patterns.API - Builder.csproj", "{64A57AB6-AB80-A24B-AAC7-4EEFE8D5D5F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - Builder", "14 - Arquitetura\07 - Design Patterns - Creational\Builder\Patterns.API - Builder.csproj", "{64A57AB6-AB80-A24B-AAC7-4EEFE8D5D5F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - Factory Method", "14 - Arquitetura\07 - Design Patterns - Creational\formacao-arquitetura-pos-factory-method\Patterns.API - Factory Method.csproj", "{4BD4D7DD-2CB4-CE6D-33C3-5E9729547908}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - Factory Method", "14 - Arquitetura\07 - Design Patterns - Creational\FactoryMethod\Patterns.API - Factory Method.csproj", "{4BD4D7DD-2CB4-CE6D-33C3-5E9729547908}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - Prototype", "14 - Arquitetura\07 - Design Patterns - Creational\formacao-arquitetura-pos-prototype\Patterns.API - Prototype.csproj", "{57118C0D-AF27-198B-D8A6-A72C3730FE70}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - Prototype", "14 - Arquitetura\07 - Design Patterns - Creational\Prototype\Patterns.API - Prototype.csproj", "{57118C0D-AF27-198B-D8A6-A72C3730FE70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - singleton", "14 - Arquitetura\07 - Design Patterns - Creational\formacao-arquitetura-pos-singleton\Patterns.API - singleton.csproj", "{A74FCBD5-8065-79A1-E596-33EFCD22EA55}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - singleton", "14 - Arquitetura\07 - Design Patterns - Creational\Singleton\Patterns.API - singleton.csproj", "{A74FCBD5-8065-79A1-E596-33EFCD22EA55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - bridge", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-bridge\Patterns.API - bridge.csproj", "{897E783C-4CB7-92ED-5A34-2CF79D77D59A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - bridge", "14 - Arquitetura\08 - Design Patterns - Structural\Bridge\Patterns.API - bridge.csproj", "{897E783C-4CB7-92ED-5A34-2CF79D77D59A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - composite", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-composite\Patterns.API - composite.csproj", "{5BE593FF-1E11-B068-FDF8-C92333FE8EED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - composite", "14 - Arquitetura\08 - Design Patterns - Structural\Composite\Patterns.API - composite.csproj", "{5BE593FF-1E11-B068-FDF8-C92333FE8EED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - Flyweight", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-Flyweight\Patterns.API - Flyweight.csproj", "{5962DE01-3910-4321-CA65-4087572C09C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - Flyweight", "14 - Arquitetura\08 - Design Patterns - Structural\Flyweight\Patterns.API - Flyweight.csproj", "{5962DE01-3910-4321-CA65-4087572C09C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - proxy", "14 - Arquitetura\08 - Design Patterns - Structural\formacao-arquitetura-pos-proxy\Patterns.API - proxy.csproj", "{F6BE2A21-9BC0-FB08-76D8-E81475DE8F0A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.API - proxy", "14 - Arquitetura\08 - Design Patterns - Structural\Proxy\Patterns.API - proxy.csproj", "{F6BE2A21-9BC0-FB08-76D8-E81475DE8F0A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "behavioral", "behavioral", "{8329DC11-99DE-4FBD-971F-90322984EB50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API", "14 - Arquitetura\09 - Design Patterns - Behavioral\formacao-arquitetura-pos-parte2-patterns-comportamentais\AwesomeShopPatterns.API.csproj", "{AE8540F5-B1C2-6C8E-57D3-96FAF266F9C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwesomeShopPatterns.API", "14 - Arquitetura\09 - Design Patterns - Behavioral\BehavioralPatterns\AwesomeShopPatterns.API.csproj", "{AE8540F5-B1C2-6C8E-57D3-96FAF266F9C5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ARQUITETURAS DE SOFTWARE", "ARQUITETURAS DE SOFTWARE", "{ECFECD94-E8AF-423E-9444-CF97A5975CA1}"
 EndProject
