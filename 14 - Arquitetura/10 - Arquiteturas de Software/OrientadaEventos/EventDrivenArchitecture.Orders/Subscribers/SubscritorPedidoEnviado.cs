@@ -1,5 +1,4 @@
 ﻿using EventDrivenArchitecture.Orders.Enums;
-using EventDrivenArchitecture.Orders.Events;
 using EventDrivenArchitecture.Orders.Repositories;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
@@ -75,7 +74,7 @@ namespace EventDrivenArchitecture.Orders.Subscribers
             }
         }
     }
-    
+
     // Classe DTO simples para o evento, já que não temos acesso ao projeto Warehouse aqui diretamente sem referência circular ou duplicação
     public class EventoPedidoEnviado
     {

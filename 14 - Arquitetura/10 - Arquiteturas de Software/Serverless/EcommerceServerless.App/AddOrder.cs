@@ -1,12 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using EcommerceServerless.App.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Azure.WebJobs;
+using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System.IO;
 using System.Threading.Tasks;
-using EcommerceServerless.App.Models;
 
 namespace EcommerceServerless.App
 {

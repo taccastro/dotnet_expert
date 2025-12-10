@@ -1,11 +1,6 @@
 ﻿using ArchitecturalPatterns.AwesomeShop.Core.Entities;
 using ArchitecturalPatterns.AwesomeShop.Core.Enums;
 using ArchitecturalPatterns.AwesomeShop.Core.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ArchitecturalPatterns.AwesomeShop.Infrastructure.Persistence.Repositories
 {
@@ -24,11 +19,11 @@ namespace ArchitecturalPatterns.AwesomeShop.Infrastructure.Persistence.Repositor
         public Task<Order> GetById(int id)
         {
             var order = new Order(
-                "1234", 
-                "LuisDev", 
-                "luisdev@mail.com", 
+                "1234",
+                "LuisDev",
+                "luisdev@mail.com",
                 new List<OrderItem> { new OrderItem(1, "Product 1", 10.5m, 3) },
-                new List<OrderUpdated> { 
+                new List<OrderUpdated> {
                     new OrderUpdated("Order Started", OrderStatus.StartedAndPaymentPending, id),
                     new OrderUpdated("Payment confirmed", OrderStatus.PreparingForDelivery, id),
                     new OrderUpdated("Order is shipped", OrderStatus.Shipped, id),
